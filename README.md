@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## AntFarm
 
 You can use the [editor on GitHub](https://github.com/incore-design/AntFarmDoc/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
