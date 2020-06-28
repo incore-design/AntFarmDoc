@@ -26,7 +26,7 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
 <table>
   <tr>
     <th nowrap>Data Object</th>
-    <th nowrap style="text-align: left; vertical-textalign: top;">Description</th>
+    <th nowrap style="text-align: left; vertical-align: top;">Description</th>
   </tr>
   <tr>
     <td nowrap>DataSet</td>
