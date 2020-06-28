@@ -5,11 +5,10 @@ AntFarm is a <a href="https://www.rhino3d.com/" target="_blank">Rhino 3D</a> plu
 ## Table of Contents
 
 - [Installation](#installation)
-- [Data Structure](#datastructure)
+- [Data_Structure](#data_structure)
 - [Rhino Commands](#rhinocommands)
-- [Team](#team)
-- [FAQ](#faq)
-- [Support](#support)
+- [API](#api)
+- [Plugins](#plugins)
 - [License](#license)
 
 
@@ -19,7 +18,7 @@ AntFarm is a <a href="https://www.rhino3d.com/" target="_blank">Rhino 3D</a> plu
 
 Text how to install AntFarm and the plugins.
 
-### <a id="datastructure">Data Structure</a>
+### Data Structure
 
 AntFarm data is held in DataSets and in addition in a record on the Rhino Object. The DataSet can have Attributes.
 
@@ -74,3 +73,12 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+---
+
+### License
+
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+
+- **[MIT license](http://opensource.org/licenses/mit-license.php)**
+- Copyright 2015 © <a href="http://fvcproductions.com" target="_blank">FVCproductions</a>.
