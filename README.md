@@ -5,7 +5,7 @@ AntFarm is a <a href="https://www.rhino3d.com/" target="_blank">Rhino 3D</a> plu
 ## Table of Contents
 
 - [Installation](#installation)
-- [Data Structure](#data%20structure)
+- [Data Structure](#datastructure)
 - [Contributing](#contributing)
 - [Team](#team)
 - [FAQ](#faq)
@@ -17,7 +17,7 @@ AntFarm is a <a href="https://www.rhino3d.com/" target="_blank">Rhino 3D</a> plu
 
 ### Installation
 
-### Data%20Structure
+### DataStructure
 
 ### Markdown
 
