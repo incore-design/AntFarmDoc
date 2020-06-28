@@ -19,7 +19,7 @@ AntFarm is a <a href="https://www.rhino3d.com/" target="_blank">Rhino 3D</a> plu
 
 Text how to install AntFarm and the plugins.
 
-### <h1 id="datastructure">Data Structure</h1>
+### <h3 id="datastructure">Data Structure</h3>
 
 AntFarm data is held in DataSets and in addition in a record on the Rhino Object. The DataSet can have Attributes.
 
