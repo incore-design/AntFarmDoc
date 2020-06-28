@@ -6,7 +6,7 @@ AntFarm is a <a href="https://www.rhino3d.com/" target="_blank">Rhino 3D</a> plu
 
 - [Installation](#installation)
 - [Data Structure](#datastructure)
-- [Contributing](#contributing)
+- [Rhino Commands](#rhinocommands)
 - [Team](#team)
 - [FAQ](#faq)
 - [Support](#support)
@@ -43,7 +43,7 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
   </tr>
 </table>
 
-### Markdown
+### <a id="rhinocommands">Rhino Commands</a>
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
