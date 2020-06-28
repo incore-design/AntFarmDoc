@@ -23,15 +23,21 @@ Text how to install AntFarm and the plugins.
 
 AntFarm data is held in DataSets and in addition in a record on the Rhino Object. The DataSet can have Attributes.
 
-<table>
+<table style="text-align: left; vertical-align: top;">
   <tr>
     <th nowrap>Data Object</th>
-    <th nowrap style="text-align: left; vertical-align: top;">Description</th>
+    <th nowrap style="text-align: left;">Description</th>
   </tr>
   <tr>
-    <td nowrap style="text-align: left; vertical-align: top;">DataSet</td>
+    <td nowrap>DataSet</td>
     <td>An AntFarm DataSet is represented as an in-memory data table. AntFarm is developed using an SQLite database. A DataSet can hold additional data specified in the attributes. The data not only gets stored in the database but also in the custom user data of the referenced Rhino object. A DataSet must be of unique name and can have the settings.
       <h4>Name</h4>
+      AntFarm DataSet names are not case sensitive and must be unique.
+      <h4>Settings</h4>
+      <ul>
+        <li>Filter - Rhino <a href="https://developer.rhino3d.com/api/RhinoCommon/html/T_Rhino_DocObjects_ObjectType.htm" target="_blank">Object Type</a> Filter which defines the type of geometry object to be referenced in the DataSet.</li>
+        <li></li>
+        </ul>
     </td>
   </tr>
 </table>
