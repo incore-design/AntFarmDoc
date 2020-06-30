@@ -250,71 +250,97 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
       <td valign="top"><b>Filter</b></td>
       <td valign="top">Rhino objects filter based on <a href="http://developer.rhino3d.com/api/RhinoCommon/html/T_Rhino_DocObjects_ObjectType.htm" target="_blank">Rhino ObjectType</a></td>
     </tr>
-    <tr>
-      <td valign="top"><b>No</b></td>
-      <td valign="top">Rhino objects keep existing, but AntFarm data will get removed from the objects.</td>
-    </tr>
   </table></td>
 </tr>
 <tr>
 <td valign="top">AF_DataSetOpen</td>
 <td valign="top">Opens an existing before closed dataset from the <a href="https://www.sqlite.org/" target="_blank">SQLite</a> in-memory database and adds it to the tab control.
-<br/><br/>Command line options:
-<ul>
-<li>Name</li>
-</ul></td>
+  <br />
+  Command line options:
+  <table>
+    <tr>
+      <td valign="top"><b>DataSet</b></td>
+      <td valign="top">Name of <a href="#dataset">DataSet</a> (names respect case-sensitive spelling and must be alphanumeric)</td>
+    </tr>
+  </table></td>
 </tr>
 <tr>
 <td valign="top">AF_DataSetRemoveFrom</td>
 <td valign="top">Removes a Rhino object from a <a href="#dataset">DataSet</a>.
-<br/><br/>Command line options:
-<ul>
-<li>Name of <a href="#dataset">DataSet</a> to remove from</li>
-</ul></td>
+  <br />
+  Command line options:
+  <table>
+    <tr>
+      <td valign="top"><b>DataSet</b></td>
+      <td valign="top">Name of <a href="#dataset">DataSet</a> to remove Rhino geometry objects from.</td>
+    </tr>
+  </table></td>
 </tr>
 <tr>
 <td valign="top">AF_DataSetRename</td>
 <td valign="top">Rename an existing <a href="#dataset">DataSet</a> (default: current selected <a href="#dataset">DataSet</a>).
-<br/><br/>Command line options:
-<ul>
-<li>New Name (names respect case-sensitive spelling and must be alphanumeric)</li>
-</ul></td>
+  <br />
+  Command line options:
+  <table>
+    <tr>
+      <td valign="top"><b>DataSet</b></td>
+      <td valign="top">Name of <a href="#dataset">DataSet</a> to rename.</td>
+    </tr>
+  </table></td>
 </tr>
 <tr>
 <td colspan="2">Commands related to <a href="#attribute">Attribute</a>s.</td>
 </tr>
 <tr>
-<td valign="top">AF_AttributeNew</td>
+<td valign="top">AF_AttributeAdd</td>
 <td valign="top">Adds a new <a href="#attribute">Attribute</a> (Column) to the <a href="#dataset">DataSet</a>.
-<br/><br/>Command line options:
-<ul>
-<li>Name of <a href="#dataset">DataSet</a> to add the <a href="#attribute">Attribute</a> to</li>
-<li><a href="#attribute_type">Attribute Type</a></li>
-<li>Additional option for either <a href="https://github.com/joel-putnam/AntFarm/wiki/Attribute">Attribute type</a> <a href="https://github.com/joel-putnam/AntFarm/wiki/Attribute">category</a>, <a href="https://github.com/joel-putnam/AntFarm/wiki/Attribute">geometric attribute</a></li>
-</ul></td>
-</tr>
-<tr>
-<td valign="top">AF_AttributeRename</td>
-<td valign="top">Rename an existing <a href="https://github.com/joel-putnam/AntFarm/wiki/Attribute">attribute</a>.
-<br/><br/>Command line options:
-<ul>
-<li>Name of <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> owning the <a href="https://github.com/joel-putnam/AntFarm/wiki/Attribute">attribute</a></li>
-<li>Name of <a href="https://github.com/joel-putnam/AntFarm/wiki/Attribute">Attribute</a> to be renamed</li>
-</ul></td>
+  <br />
+  Command line options:
+  <table>
+    <tr>
+      <td valign="top"><b>DataSet</b></td>
+      <td valign="top">Name of <a href="#dataset">DataSet</a> to add the <a href="#attribute">Attribute</a>.</td>
+    </tr>
+    <tr>
+      <td valign="top"><b>Type</b></td>
+      <td valign="top"><a href="#attribute_type">Type</a> of <a href="#attribute">Attribute</a>.</td>
+    </tr>
+  </table></td>
 </tr>
 <tr>
 <td valign="top">AF_AttributeMove</td>
-<td valign="top">Move/Copy an <a href="https://github.com/joel-putnam/AntFarm/wiki/Attribute">attribute</a> from one <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> to another.
-(not implemented, see <a href="https://github.com/joel-putnam/AntFarm/issues/46">Issue 46</a>)</td>
+<td valign="top">Not supported.</td>
 </tr>
 <tr>
-<td valign="top">AF_AttributeDelete</td>
-<td valign="top">Deletes an <a href="https://github.com/joel-putnam/AntFarm/wiki/Attribute">attribute</a> from a <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> and removes the data from the Rhino object.
-<br/><br/>Command line options:
-<ul>
-<li>Name of <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> owning the <a href="https://github.com/joel-putnam/AntFarm/wiki/Attribute">attribute</a></li>
-<li>Name of <a href="https://github.com/joel-putnam/AntFarm/wiki/Attribute">Attribute</a> to be deleted</li>
-</ul></td>
+<td valign="top">AF_AttributeRename</td>
+<td valign="top">Rename an existing <a href="#attribute">Attribute</a>.
+  <br />
+  Command line options:
+  <table>
+    <tr>
+      <td valign="top"><b>DataSet</b></td>
+      <td valign="top">Name of <a href="#dataset">DataSet</a> that holds the <a href="#attribute">Attribute</a>.</td>
+    </tr>
+    <tr>
+      <td valign="top"><b>Attribute</b></td>
+      <td valign="top">Name of the <a href="#attribute">Attribute</a> to be renamed.</td>
+    </tr>
+  </table></td>
+</tr>
+<tr>
+<td valign="top">AF_AttributeRemove</td>
+<td valign="top">Removes an <a href="#attribute">Attribute</a> from a <a href="#dataset">DataSet</a> and removes the associated data from the Rhino object.
+  <br />
+  Command line options:
+  <table>
+    <tr>
+      <td valign="top"><b>DataSet</b></td>
+      <td valign="top">Name of <a href="#dataset">DataSet</a> that holds the <a href="#attribute">Attribute</a>.</td>
+    </tr>
+    <tr>
+      <td valign="top"><b>Attribute</b></td>
+      <td valign="top">Name of the <a href="#attribute">Attribute</a> to be removed.</td>
+    </tr></td>
 </tr>
 </table>
 
