@@ -162,7 +162,7 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
 </tr>
 <tr>
 <td valign="top">AF_DataSetAddTo</td>
-<td valign="top">Adds Rhino objects to a <a href="#dataset">DataSet</a>. This allows the user to store additional <a href="https://github.com/joel-putnam/AntFarm/wiki/data">data</a> on a Rhino object.
+<td valign="top">Adds Rhino objects to a <a href="#dataset">DataSet</a>. This allows the user to store additional data on a Rhino object.
 <br/><br/>Command line options:
 <ul>
 <li><b>DataSet</b> - Name of <a href="#dataset">DataSet</a> to add to</li>
@@ -187,11 +187,19 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
 <tr>
 <td valign="top">AF_DataSetCSVExport</td>
 <td valign="top">Exports the data of an AntFarm <a href="#dataset">DataSet</a> to csv file.
-<br/><br/>Command line options:
-<ul>
-  <li><b>DataSet</b> - Name of <a href="#dataset">DataSet</a> to export</li>
-  <li><b>Browse</b> - File location to export to</li>
-</ul></td>
+  <table>
+    <tr>
+      <th colspan="2">Command line options:</th>
+    </tr>
+    <tr>
+      <td><b>DataSet</b></td>
+      <td>Name of <a href="#dataset">DataSet</a> to export</td>
+    </tr>
+    <tr>
+      <td><b>Browse</b></td>
+      <td>Opens a file dialog to specify file to export to</td>
+    </tr>
+  </table></td>
 </tr>
 <tr>
 <td valign="top">AF_DataSetCSVImport</td>
