@@ -165,7 +165,7 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
 <td valign="top">Adds Rhino objects to a <a href="#dataset">DataSet</a>. This allows the user to store additional <a href="https://github.com/joel-putnam/AntFarm/wiki/data">data</a> on a Rhino object.
 <br/><br/>Command line options:
 <ul>
-<li>Name of <a href="#dataset">DataSet</a> to add to</li>
+<li><b>DataSet</b> - Name of <a href="#dataset">DataSet</a> to add to</li>
 </ul></td>
 </tr>
 <tr>
