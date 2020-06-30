@@ -38,8 +38,7 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
     <td nowrap valign="top" id="dataset">DataSet</td>
     <td>
       <p>An AntFarm DataSet is represented as an in-memory data table. AntFarm is developed using an SQLite database. A DataSet can hold additional data specified in the attributes. The data not only gets stored in the database but also in the custom user data of the referenced Rhino object. A DataSet must be of unique name and can have the settings.</p>
-      <h4>Name</h4>
-      &nbsp;&nbsp;AntFarm DataSet names are not case sensitive and must be unique.
+      <b>Name</b> - AntFarm DataSet names are not case sensitive and must be unique.
       <h4>Settings</h4>
       <ul>
         <li>Filter - Rhino <a href="https://developer.rhino3d.com/api/RhinoCommon/html/T_Rhino_DocObjects_ObjectType.htm" target="_blank">Object Type</a> Filter which defines the type of geometry object to be referenced in the DataSet.</li>
@@ -50,14 +49,26 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
   <tr>
     <td nowrap valign="top" id="attribute">Attribute</td>
     <td>
-      <p>Text ...</p>
-      <h4>Name</h4>
-      &nbsp;&nbsp;AntFarm DataSet names are not case sensitive and must be unique.
-      <h4>Settings</h4>
+      <p>AntFarm <a href="#dataset">DataSet</a>s can hold additional data in Attributes (<a href="#dataset">DataSet</a> columns).</p>
+      <b>Name</b> - AntFarm <a href="#dataset">DataSet</a> Attribute names are not case sensitive and must be unique.
+      <b>Data Types</b>
       <ul>
-        <li>Filter - Rhino <a href="https://developer.rhino3d.com/api/RhinoCommon/html/T_Rhino_DocObjects_ObjectType.htm" target="_blank">Object Type</a> Filter which defines the type of geometry object to be referenced in the DataSet.</li>
-        <li></li>
-        </ul>
+        <li>Boolean - base data type</li>  
+        <li><a href="#category">Category</a> - AntFarm specific data type</li>  
+        <li>DateTime - base data type</li>  
+        <li>Double - base data type</li>  
+        <li>Float - base data type</li>  
+        <li><a href="#geometric">Geometric</a> - AntFarm specific data type</li>  
+        <li>Integer - base data type</li>  
+        <li>String - base data type</li>  
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap valign="top" id="category">Category</td>
+    <td>
+      <p>AntFarm Category is a custom data type that can hold <a href="category_element">AntFarm Category Elements</a>.</p>
+      <b>Name</b> - AntFarm Category names are not case sensitive and must be unique.
     </td>
   </tr>
 </table>
