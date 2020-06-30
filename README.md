@@ -161,37 +161,16 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
 <td colspan="2">Commands related to <a href="#dataset">DataSet</a>s.</td>
 </tr>
 <tr>
-<td valign="top">AF_DataSetNew</td>
-<td valign="top">Creates a new <a href="#dataset">DataSet</a> in AntFarm with in-memory data element and <a href="https://www.sqlite.org" target="_blank">SQLite</a> table.
+<td valign="top">AF_DataSetAddTo</td>
+<td valign="top">Adds Rhino objects to a <a href="#dataset">DataSet</a>. This allows the user to store additional <a href="https://github.com/joel-putnam/AntFarm/wiki/data">data</a> on a Rhino object.
 <br/><br/>Command line options:
 <ul>
-<li>Name (names respect case-sensitive spelling and must be alphanumeric)</li>
-<li>Filter - Rhino objects filter based on <a href="http://developer.rhino3d.com/api/RhinoCommon/html/T_Rhino_DocObjects_ObjectType.htm" target="_blank">Rhino Objecttype</a></li>
+<li>Name of <a href="#dataset">DataSet</a> to add to</li>
 </ul></td>
 </tr>
 <tr>
 <td valign="top">AF_DataSetChangeColor</td>
 <td valign="top">Allows for changing the <a href="#dataset">DataSet</a> color.</td>
-</tr>
-<tr>
-<td valign="top">AF_DataSetOpen</td>
-<td valign="top">Opens an existing before closed dataset from the <a href="https://www.sqlite.org/" target="_blank">SQLite</a> in-memory database and adds it to the tab control.
-<br/><br/>Command line options:
-<ul>
-<li>Name</li>
-</ul></td>
-</tr>
-<tr>
-<td valign="top">AF_DataSetOpenAll</td>
-<td valign="top">Opens all existing <a href="#dataset">DataSet</a>s from the SQLite database and adds them to the tab control.</td>
-</tr>
-<tr>
-<td valign="top">AF_DataSetRename</td>
-<td valign="top">Rename an existing <a href="#dataset">DataSet</a> (default: current selected <a href="#dataset">DataSet</a>).
-<br/><br/>Command line options:
-<ul>
-<li>New Name (names respect case-sensitive spelling and must be alphanumeric)</li>
-</ul></td>
 </tr>
 <tr>
 <td valign="top">AF_DataSetClose</td>
@@ -204,32 +183,6 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
 <tr>
 <td valign="top">AF_DataSetCloseAllButThis</td>
 <td valign="top">Close all displayed <a href="#dataset">DataSet</a>s but the current selected.</td>
-</tr>
-<tr>
-<td valign="top">AF_DataSetDelete</td>
-<td valign="top">Delete a <a href="#dataset">DataSet</a> and its related data. Allows for deleting associated rhino objects.
-<br/><br/>Command line options:
-<ul>
-<li>Name of <a href="#dataset">DataSet</a> to be deleted</li>
-<li>YES - all Rhino objects will get deleted. If rhino objects exist in other <a href="#dataset">DataSet</a>s entries will also get removed from other <a href="#dataset">DataSet</a>s.</li>
-<li>NO - Rhino objects keep existing, but AntFarm data will get removed from the objects.</li>
-</ul></td>
-</tr>
-<tr>
-<td valign="top">AF_DataSetAddTo</td>
-<td valign="top">Adds Rhino objects to a <a href="#dataset">DataSet</a>. This allows the user to store additional <a href="https://github.com/joel-putnam/AntFarm/wiki/data">data</a> on a Rhino object.
-<br/><br/>Command line options:
-<ul>
-<li>Name of <a href="#dataset">DataSet</a> to add to</li>
-</ul></td>
-</tr>
-<tr>
-<td valign="top">AF_DataSetRemoveFrom</td>
-<td valign="top">Removes a Rhino object from a <a href="#dataset">DataSet</a>.
-<br/><br/>Command line options:
-<ul>
-<li>Name of <a href="#dataset">DataSet</a> to remove from</li>
-</ul></td>
 </tr>
 <tr>
 <td valign="top">AF_DataSetCSVExport</td>
@@ -247,6 +200,49 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
 <ul>
 <li>Name of <a href="#dataset">DataSet</a> to import to</li>
 <li>File location to of csv file</li>
+</ul></td>
+</tr>
+<tr>
+<td valign="top">AF_DataSetDelete</td>
+<td valign="top">Delete a <a href="#dataset">DataSet</a> and its related data. Allows for deleting associated rhino objects.
+<br/><br/>Command line options:
+<ul>
+<li>Name of <a href="#dataset">DataSet</a> to be deleted</li>
+<li>YES - all Rhino objects will get deleted. If rhino objects exist in other <a href="#dataset">DataSet</a>s entries will also get removed from other <a href="#dataset">DataSet</a>s.</li>
+<li>NO - Rhino objects keep existing, but AntFarm data will get removed from the objects.</li>
+</ul></td>
+</tr>
+<tr>
+<td valign="top">AF_DataSetNew</td>
+<td valign="top">Creates a new <a href="#dataset">DataSet</a> in AntFarm with in-memory data element and <a href="https://www.sqlite.org" target="_blank">SQLite</a> table.
+<br/><br/>Command line options:
+<ul>
+<li>Name (names respect case-sensitive spelling and must be alphanumeric)</li>
+<li>Filter - Rhino objects filter based on <a href="http://developer.rhino3d.com/api/RhinoCommon/html/T_Rhino_DocObjects_ObjectType.htm" target="_blank">Rhino Objecttype</a></li>
+</ul></td>
+</tr>
+<tr>
+<td valign="top">AF_DataSetOpen</td>
+<td valign="top">Opens an existing before closed dataset from the <a href="https://www.sqlite.org/" target="_blank">SQLite</a> in-memory database and adds it to the tab control.
+<br/><br/>Command line options:
+<ul>
+<li>Name</li>
+</ul></td>
+</tr>
+<tr>
+<td valign="top">AF_DataSetRemoveFrom</td>
+<td valign="top">Removes a Rhino object from a <a href="#dataset">DataSet</a>.
+<br/><br/>Command line options:
+<ul>
+<li>Name of <a href="#dataset">DataSet</a> to remove from</li>
+</ul></td>
+</tr>
+<tr>
+<td valign="top">AF_DataSetRename</td>
+<td valign="top">Rename an existing <a href="#dataset">DataSet</a> (default: current selected <a href="#dataset">DataSet</a>).
+<br/><br/>Command line options:
+<ul>
+<li>New Name (names respect case-sensitive spelling and must be alphanumeric)</li>
 </ul></td>
 </tr>
 <tr>
