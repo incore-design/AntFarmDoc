@@ -191,42 +191,70 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
   Command line options:
   <table>
     <tr>
-      <td><b>DataSet</b></td>
-      <td>Name of <a href="#dataset">DataSet</a> to export</td>
+      <td valign="top"><b>DataSet</b></td>
+      <td valign="top">Name of <a href="#dataset">DataSet</a> to export</td>
     </tr>
     <tr>
-      <td><b>Browse</b></td>
-      <td>Opens a file dialog to specify file to export to</td>
+      <td valign="top"><b>Browse</b></td>
+      <td valign="top">Opens a file dialog to specify file to export to</td>
     </tr>
   </table></td>
 </tr>
 <tr>
 <td valign="top">AF_DataSetCSVImport</td>
 <td valign="top">Imports data from a csv file to an AntFarm <a href="#dataset">DataSet</a>.
-<br/><br/>Command line options:
-<ul>
-<li><b>DataSet</b> - Name of <a href="#dataset">DataSet</a> to import to</li>
-<li><b>Browse</b> - File location of csv file</li>
-</ul></td>
+  <br />
+  Command line options:
+  <table>
+    <tr>
+      <td valign="top"><b>DataSet</b></td>
+      <td valign="top">Name of <a href="#dataset">DataSet</a> to export</td>
+    </tr>
+    <tr>
+      <td valign="top"><b>Browse</b></td>
+      <td valign="top">Opens a file dialog to specify file to export to</td>
+    </tr>
+  </table></td>
 </tr>
 <tr>
 <td valign="top">AF_DataSetDelete</td>
 <td valign="top">Delete a <a href="#dataset">DataSet</a> and its related data. Allows for deleting associated rhino objects.
-<br/><br/>Command line options:
-<ul>
-<li><b>DataSet</b> - Name of <a href="#dataset">DataSet</a> to be deleted</li>
-<li><b>Yes</b> - all Rhino objects will get deleted. If rhino objects exist in other <a href="#dataset">DataSet</a>s entries will also get removed from other <a href="#dataset">DataSet</a>s.</li>
-<li><b>No</b> - Rhino objects keep existing, but AntFarm data will get removed from the objects.</li>
-</ul></td>
+  <br />
+  Command line options:
+  <table>
+    <tr>
+      <td valign="top"><b>DataSet</b></td>
+      <td valign="top">Name of <a href="#dataset">DataSet</a> to export</td>
+    </tr>
+    <tr>
+      <td valign="top"><b>Yes</b></td>
+      <td valign="top">All Rhino objects will get deleted. If rhino objects exist in other <a href="#dataset">DataSet</a>s entries will also get removed from other <a href="#dataset">DataSet</a>s</td>
+    </tr>
+    <tr>
+      <td valign="top"><b>No</b></td>
+      <td valign="top">Rhino objects keep existing, but AntFarm data will get removed from the objects.</td>
+    </tr>
+  </table></td>
 </tr>
 <tr>
 <td valign="top">AF_DataSetNew</td>
 <td valign="top">Creates a new <a href="#dataset">DataSet</a> in AntFarm with in-memory data element and <a href="https://www.sqlite.org" target="_blank">SQLite</a> table.
-<br/><br/>Command line options:
-<ul>
-<li>Name (names respect case-sensitive spelling and must be alphanumeric)</li>
-<li>Filter - Rhino objects filter based on <a href="http://developer.rhino3d.com/api/RhinoCommon/html/T_Rhino_DocObjects_ObjectType.htm" target="_blank">Rhino Objecttype</a></li>
-</ul></td>
+  <br />
+  Command line options:
+  <table>
+    <tr>
+      <td valign="top"><b>DataSet</b></td>
+      <td valign="top">Name of <a href="#dataset">DataSet</a> (names respect case-sensitive spelling and must be alphanumeric)</td>
+    </tr>
+    <tr>
+      <td valign="top"><b>Filter</b></td>
+      <td valign="top">Rhino objects filter based on <a href="http://developer.rhino3d.com/api/RhinoCommon/html/T_Rhino_DocObjects_ObjectType.htm" target="_blank">Rhino ObjectType</a></td>
+    </tr>
+    <tr>
+      <td valign="top"><b>No</b></td>
+      <td valign="top">Rhino objects keep existing, but AntFarm data will get removed from the objects.</td>
+    </tr>
+  </table></td>
 </tr>
 <tr>
 <td valign="top">AF_DataSetOpen</td>
