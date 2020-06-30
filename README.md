@@ -53,7 +53,7 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
       <p>AntFarm <a href="#dataset">DataSet</a>s can hold additional data in Attributes (<a href="#dataset">DataSet</a> columns).</p>
       <b>Name</b> - AntFarm <a href="#dataset">DataSet</a> Attribute names are not case sensitive and must be unique.
       <br />
-      <b>Data Types</b>
+      <b id="attribute_type">Attribute Type</b>
       <ul>
         <li>Boolean - base data type</li>  
         <li><a href="#category">Category</a> - AntFarm specific data type</li>  
@@ -250,11 +250,11 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
 </tr>
 <tr>
 <td valign="top">AF_AttributeNew</td>
-<td valign="top">Adds a new <a href="https://github.com/joel-putnam/AntFarm/wiki/Attribute">attribute</a> (Column) to the  <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a>.
+<td valign="top">Adds a new <a href="#attribute">Attribute</a> (Column) to the <a href="#dataset">DataSet</a>.
 <br/><br/>Command line options:
 <ul>
-<li>Name of <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> to add the <a href="https://github.com/joel-putnam/AntFarm/wiki/Attribute">attribute</a> to</li>
-<li><a href="https://github.com/joel-putnam/AntFarm/wiki/Attribute">Attribute type</a></li>
+<li>Name of <a href="#dataset">DataSet</a> to add the <a href="#attribute">Attribute</a> to</li>
+<li><a href="#attribute_type">Attribute Type</a></li>
 <li>Additional option for either <a href="https://github.com/joel-putnam/AntFarm/wiki/Attribute">Attribute type</a> <a href="https://github.com/joel-putnam/AntFarm/wiki/Attribute">category</a>, <a href="https://github.com/joel-putnam/AntFarm/wiki/Attribute">geometric attribute</a></li>
 </ul></td>
 </tr>
