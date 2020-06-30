@@ -109,6 +109,22 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
     </td>
   </tr>
   <tr>
+    <td valign="top" id="geometric">Geometric</td>
+    <td>
+      <p>An AntFarm specific data type that exposes geometrical data evaluated on the Rhino Object.</p>
+      <b>Supported Types</b>
+      <ul>
+        <li>None - base data type</li>  
+        <li>Length - evaluates the length of an object if property is supported</li>  
+        <li>Area - evaluates the area of an object if property is supported</li>  
+        <li>Volume - evaluates the Volume of an object if property is supported</li>  
+        <li>X_Value - evaluates the x-coordinate of an object if property is supported</li>  
+        <li>Y_Value - evaluates the x-coordinate of an object if property is supported</li>  
+        <li>Z_Value - evaluates the x-coordinate of an object if property is supported</li>  
+      </ul>
+    </td>
+  </tr>
+  <tr>
     <td valign="top" id="colour">Colour</td>
     <td>
       <p>An AntFarm Category Element Property can hold additional data on an <a href="category_element">AntFarm Category Element</a>.</p>
@@ -122,8 +138,6 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
     </td>
   </tr>
 </table>
-
----
 
 ### Rhino Commands
 
