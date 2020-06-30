@@ -1,5 +1,5 @@
 <a href="https://incore.design/antfarm.html">
-  <img src="https://github.com/joel-putnam/AntFarm/blob/Master/Icons%2BImages/ant_2048.png" title="AntFarm" alt="AntFarm" width="200" target="_blank">
+  <img src="https://github.com/incore-design/AntFarmDoc/blob/master/ant_2048.png" title="AntFarm" alt="AntFarm" width="200" target="_blank">
 </a>
 ## AntFarm
 
