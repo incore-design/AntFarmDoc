@@ -187,10 +187,9 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
 <tr>
 <td valign="top">AF_DataSetCSVExport</td>
 <td valign="top">Exports the data of an AntFarm <a href="#dataset">DataSet</a> to csv file.
+  <br />
+  Command line options:
   <table>
-    <tr>
-      <th colspan="2">Command line options:</th>
-    </tr>
     <tr>
       <td><b>DataSet</b></td>
       <td>Name of <a href="#dataset">DataSet</a> to export</td>
