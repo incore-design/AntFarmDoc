@@ -35,7 +35,7 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
     <th nowrap style="text-align: left;">Description</th>
   </tr>
   <tr>
-    <td nowrap valign="top" id="dataset">DataSet</td>
+    <td valign="top" id="dataset">DataSet</td>
     <td>
       <p>An AntFarm DataSet is represented as an in-memory data table. AntFarm is developed using an SQLite database. A DataSet can hold additional data specified in the attributes. The data not only gets stored in the database but also in the custom user data of the referenced Rhino object. A DataSet must be of unique name and can have the settings.</p>
       <b>Name</b> - AntFarm DataSet names are not case sensitive and must be unique.
@@ -43,12 +43,12 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
       <b>Settings</b>
       <ul>
         <li>Filter - Rhino <a href="https://developer.rhino3d.com/api/RhinoCommon/html/T_Rhino_DocObjects_ObjectType.htm" target="_blank">Object Type</a> Filter which defines the type of geometry object to be referenced in the DataSet.</li>
-        <li></li>
+        <li>Colour - AntFarm <a href="#dataset">DataSet</a> colour</li>
         </ul>
     </td>
   </tr>  
   <tr>
-    <td nowrap valign="top" id="attribute">Attribute</td>
+    <td valign="top" id="attribute">Attribute</td>
     <td>
       <p>AntFarm <a href="#dataset">DataSet</a>s can hold additional data in Attributes (<a href="#dataset">DataSet</a> columns).</p>
       <b>Name</b> - AntFarm <a href="#dataset">DataSet</a> Attribute names are not case sensitive and must be unique.
@@ -67,10 +67,58 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
     </td>
   </tr>
   <tr>
-    <td nowrap valign="top" id="category">Category</td>
+    <td valign="top" id="category">Category</td>
     <td>
-      <p>AntFarm Category is a custom data type that can hold <a href="category_element">AntFarm Category Elements</a>.</p>
+      <p>AntFarm Category is a custom data type that can hold <a href="category_element">AntFarm Category Element</a>s.</p>
       <b>Name</b> - AntFarm Category names are not case sensitive and must be unique.
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" id="category_element">Category Element</td>
+    <td>
+      <p>An AntFarm Category Element is a value in an AntFarm <a href="#category">Category</a>. An AntFarm Category ELement can hold predefined <a href="#category_element_property">AntFarm Category Element Properties</a>.</p>
+      <b>Name</b> - AntFarm Category Element names are not case sensitive and must be unique.
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" id="category_element_property">Category Element Property</td>
+    <td>
+      <p>An AntFarm Category Element Property can hold additional data on an <a href="category_element">AntFarm Category Element</a>.</p>
+      <b>Name</b> - AntFarm Category Element Property names are not case sensitive and must be unique.
+      <br />
+      <b><a href="#property_type">Property Type</a></b> - <a href="#property_type">AntFarm Property Type</a> are AntFarm specific data types.
+      <br />
+      <b>Value</b> - A value based on the <a href="#property_type">AntFarm Property Type</a>.
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" id="property_type">Property Type</td>
+    <td>
+      <p>An AntFarm Category Element Property can hold additional data on an <a href="category_element">AntFarm Category Element</a>.</p>
+      <b>Name</b> - AntFarm Property Type names are not case sensitive and must be unique.
+      <br />
+      <b>Base Types</b>
+      <ul>
+        <li>Boolean - base data type</li>  
+        <li><a href="#colour">Colour</a> - AntFarm specific data type</li>  
+        <li>DateTime - base data type</li>  
+        <li>Double - base data type</li>
+        <li>Integer - base data type</li>  
+        <li>String - base data type</li>  
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" id="colour">Colour</td>
+    <td>
+      <p>An AntFarm Category Element Property can hold additional data on an <a href="category_element">AntFarm Category Element</a>.</p>
+      <b>A</b> - Transparency value of type byte.
+      <br />
+      <b>R</b> - Red value of type byte.
+      <br />
+      <b>G</b> - Green value of type byte.
+      <br />
+      <b>B</b> - Blue value of type byte.
     </td>
   </tr>
 </table>
