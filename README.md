@@ -43,6 +43,19 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
         <li></li>
         </ul>
     </td>
+  </tr>  
+  <tr>
+    <td nowrap valign="top" id="attribute">Attribute</td>
+    <td>
+      <p>Text ...</p>
+      <h4>Name</h4>
+      &nbsp;&nbsp;AntFarm DataSet names are not case sensitive and must be unique.
+      <h4>Settings</h4>
+      <ul>
+        <li>Filter - Rhino <a href="https://developer.rhino3d.com/api/RhinoCommon/html/T_Rhino_DocObjects_ObjectType.htm" target="_blank">Object Type</a> Filter which defines the type of geometry object to be referenced in the DataSet.</li>
+        <li></li>
+        </ul>
+    </td>
   </tr>
 </table>
 
@@ -69,16 +82,16 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
 </tr>
 <tr>
 <td valign="top">AF_DataSetNew</td>
-<td valign="top">Creates a new <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> in AntFarm with in-memory data element and <a href="https://www.sqlite.org" target="_blank">SQLite</a> table.
+<td valign="top">Creates a new <a href="#dataset">DataSet</a> in AntFarm with in-memory data element and <a href="https://www.sqlite.org" target="_blank">SQLite</a> table.
 <br/><br/>Command line options:
 <ul>
 <li>Name (names respect case-sensitive spelling and must be alphanumeric)</li>
-<li>Filter - Rhino objects filter based on <a href="http://developer.rhino3d.com/api/RhinoCommon/html/T_Rhino_DocObjects_ObjectType.htm">Rhino Objecttype</a></li>
+<li>Filter - Rhino objects filter based on <a href="http://developer.rhino3d.com/api/RhinoCommon/html/T_Rhino_DocObjects_ObjectType.htm" target="_blank">Rhino Objecttype</a></li>
 </ul></td>
 </tr>
 <tr>
 <td valign="top">AF_DataSetChangeColor</td>
-<td valign="top">Allows for changing the <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> color.</td>
+<td valign="top">Allows for changing the <a href="#dataset">DataSet</a> color.</td>
 </tr>
 <tr>
 <td valign="top">AF_DataSetOpen</td>
@@ -90,11 +103,11 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
 </tr>
 <tr>
 <td valign="top">AF_DataSetOpenAll</td>
-<td valign="top">Opens all existing <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a>s from the SQLite database and adds them to the tab control.</td>
+<td valign="top">Opens all existing <a href="#dataset">DataSet</a>s from the SQLite database and adds them to the tab control.</td>
 </tr>
 <tr>
 <td valign="top">AF_DataSetRename</td>
-<td valign="top">Rename an existing <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> (default: current selected <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a>).
+<td valign="top">Rename an existing <a href="#dataset">DataSet</a> (default: current selected <a href="#dataset">DataSet</a>).
 <br/><br/>Command line options:
 <ul>
 <li>New Name (names respect case-sensitive spelling and must be alphanumeric)</li>
@@ -102,62 +115,62 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
 </tr>
 <tr>
 <td valign="top">AF_DataSetClose</td>
-<td valign="top">Close a displayed <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> (default: current selected <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a>). Removes <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> display from tabcontrol.</td>
+<td valign="top">Close a displayed <a href="#dataset">DataSet</a> (default: current selected <a href="#dataset">DataSet</a>). Removes <a href="#dataset">DataSet</a> display from tabcontrol.</td>
 </tr>
 <tr>
 <td valign="top">AF_DataSetCloseAll</td>
-<td valign="top">Close all displayed <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a>s. Remove all <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a>s from tabcontrol.</td>
+<td valign="top">Close all displayed <a href="#dataset">DataSet</a>s. Remove all <a href="#dataset">DataSet</a>s from tabcontrol.</td>
 </tr>
 <tr>
 <td valign="top">AF_DataSetCloseAllButThis</td>
-<td valign="top">Close all displayed <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a>s but the current selected.</td>
+<td valign="top">Close all displayed <a href="#dataset">DataSet</a>s but the current selected.</td>
 </tr>
 <tr>
 <td valign="top">AF_DataSetDelete</td>
-<td valign="top">Delete a <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> and its related data. Allows for deleting associated rhino objects.
+<td valign="top">Delete a <a href="#dataset">DataSet</a> and its related data. Allows for deleting associated rhino objects.
 <br/><br/>Command line options:
 <ul>
-<li>Name of <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> to be deleted</li>
-<li>YES - all Rhino objects will get deleted. If rhino objects exist in other <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a>s entries will also get removed from other <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a>s.</li>
+<li>Name of <a href="#dataset">DataSet</a> to be deleted</li>
+<li>YES - all Rhino objects will get deleted. If rhino objects exist in other <a href="#dataset">DataSet</a>s entries will also get removed from other <a href="#dataset">DataSet</a>s.</li>
 <li>NO - Rhino objects keep existing, but AntFarm data will get removed from the objects.</li>
 </ul></td>
 </tr>
 <tr>
 <td valign="top">AF_DataSetAddTo</td>
-<td valign="top">Adds Rhino objects to a <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a>. This allows the user to store additional <a href="https://github.com/joel-putnam/AntFarm/wiki/data">data</a> on a Rhino object.
+<td valign="top">Adds Rhino objects to a <a href="#dataset">DataSet</a>. This allows the user to store additional <a href="https://github.com/joel-putnam/AntFarm/wiki/data">data</a> on a Rhino object.
 <br/><br/>Command line options:
 <ul>
-<li>Name of <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> to add to</li>
+<li>Name of <a href="#dataset">DataSet</a> to add to</li>
 </ul></td>
 </tr>
 <tr>
 <td valign="top">AF_DataSetRemoveFrom</td>
-<td valign="top">Removes a Rhino object from a <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a>.
+<td valign="top">Removes a Rhino object from a <a href="#dataset">DataSet</a>.
 <br/><br/>Command line options:
 <ul>
-<li>Name of <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> to remove from</li>
+<li>Name of <a href="#dataset">DataSet</a> to remove from</li>
 </ul></td>
 </tr>
 <tr>
 <td valign="top">AF_DataSetCSVExport</td>
-<td valign="top">Exports the data of an AntFarm <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> to csv file.
+<td valign="top">Exports the data of an AntFarm <a href="#dataset">DataSet</a> to csv file.
 <br/><br/>Command line options:
 <ul>
-<li>Name of <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> to export</li>
+<li>Name of <a href="#dataset">DataSet</a> to export</li>
 <li>File location to export to</li>
 </ul></td>
 </tr>
 <tr>
 <td valign="top">AF_DataSetCSVImport</td>
-<td valign="top">Imports data from a csv file to an AntFarm <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a>.
+<td valign="top">Imports data from a csv file to an AntFarm <a href="#dataset">DataSet</a>.
 <br/><br/>Command line options:
 <ul>
-<li>Name of <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> to import to</li>
+<li>Name of <a href="#dataset">DataSet</a> to import to</li>
 <li>File location to of csv file</li>
 </ul></td>
 </tr>
 <tr>
-<td colspan="2">Commands related to <a href="https://github.com/joel-putnam/AntFarm/wiki/Attribute">Attribute</a>s.</td>
+<td colspan="2">Commands related to <a href="#attribute">Attribute</a>s.</td>
 </tr>
 <tr>
 <td valign="top">AF_AttributeNew</td>
