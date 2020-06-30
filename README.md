@@ -48,25 +48,151 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
 
 ### Rhino Commands
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
+<table>
+<tr>
+<td><b>Command</b></td>
+<td><b>Description</b></td>
+</tr>
+<tr>
+<td colspan="2">General Commands</td>
+</tr>
+<tr>
+<td valign="top">AntFarm</td>
+<td valign="top">Opens the main AntFarm dockable panel.</td>
+</tr>
+<tr>
+<td valign="top">AF_Settings</td>
+<td valign="top">Opens the AntFarm settings dialog.</td>
+</tr>
+<tr>
+<td colspan="2">Commands related to <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a>s.</td>
+</tr>
+<tr>
+<td valign="top">AF_DataSetNew</td>
+<td valign="top">Creates a new <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> in AntFarm with in-memory data element and <a href="https://www.sqlite.org" target="_blank">SQLite</a> table.
+<br/><br/>Command line options:
+<ul>
+<li>Name (names respect case-sensitive spelling and must be alphanumeric)</li>
+<li>Filter - Rhino objects filter based on <a href="http://developer.rhino3d.com/api/RhinoCommon/html/T_Rhino_DocObjects_ObjectType.htm">Rhino Objecttype</a></li>
+</ul></td>
+</tr>
+<tr>
+<td valign="top">AF_DataSetChangeColor</td>
+<td valign="top">Allows for changing the <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> color.</td>
+</tr>
+<tr>
+<td valign="top">AF_DataSetOpen</td>
+<td valign="top">Opens an existing before closed dataset from the <a href="https://www.sqlite.org/" target="_blank">SQLite</a> in-memory database and adds it to the tab control.
+<br/><br/>Command line options:
+<ul>
+<li>Name</li>
+</ul></td>
+</tr>
+<tr>
+<td valign="top">AF_DataSetOpenAll</td>
+<td valign="top">Opens all existing <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a>s from the SQLite database and adds them to the tab control.</td>
+</tr>
+<tr>
+<td valign="top">AF_DataSetRename</td>
+<td valign="top">Rename an existing <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> (default: current selected <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a>).
+<br/><br/>Command line options:
+<ul>
+<li>New Name (names respect case-sensitive spelling and must be alphanumeric)</li>
+</ul></td>
+</tr>
+<tr>
+<td valign="top">AF_DataSetClose</td>
+<td valign="top">Close a displayed <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> (default: current selected <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a>). Removes <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> display from tabcontrol.</td>
+</tr>
+<tr>
+<td valign="top">AF_DataSetCloseAll</td>
+<td valign="top">Close all displayed <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a>s. Remove all <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a>s from tabcontrol.</td>
+</tr>
+<tr>
+<td valign="top">AF_DataSetCloseAllButThis</td>
+<td valign="top">Close all displayed <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a>s but the current selected.</td>
+</tr>
+<tr>
+<td valign="top">AF_DataSetDelete</td>
+<td valign="top">Delete a <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> and its related data. Allows for deleting associated rhino objects.
+<br/><br/>Command line options:
+<ul>
+<li>Name of <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> to be deleted</li>
+<li>YES - all Rhino objects will get deleted. If rhino objects exist in other <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a>s entries will also get removed from other <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a>s.</li>
+<li>NO - Rhino objects keep existing, but AntFarm data will get removed from the objects.</li>
+</ul></td>
+</tr>
+<tr>
+<td valign="top">AF_DataSetAddTo</td>
+<td valign="top">Adds Rhino objects to a <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a>. This allows the user to store additional <a href="https://github.com/joel-putnam/AntFarm/wiki/data">data</a> on a Rhino object.
+<br/><br/>Command line options:
+<ul>
+<li>Name of <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> to add to</li>
+</ul></td>
+</tr>
+<tr>
+<td valign="top">AF_DataSetRemoveFrom</td>
+<td valign="top">Removes a Rhino object from a <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a>.
+<br/><br/>Command line options:
+<ul>
+<li>Name of <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> to remove from</li>
+</ul></td>
+</tr>
+<tr>
+<td valign="top">AF_DataSetCSVExport</td>
+<td valign="top">Exports the data of an AntFarm <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> to csv file.
+<br/><br/>Command line options:
+<ul>
+<li>Name of <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> to export</li>
+<li>File location to export to</li>
+</ul></td>
+</tr>
+<tr>
+<td valign="top">AF_DataSetCSVImport</td>
+<td valign="top">Imports data from a csv file to an AntFarm <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a>.
+<br/><br/>Command line options:
+<ul>
+<li>Name of <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> to import to</li>
+<li>File location to of csv file</li>
+</ul></td>
+</tr>
+<tr>
+<td colspan="2">Commands related to <a href="https://github.com/joel-putnam/AntFarm/wiki/Attribute">Attribute</a>s.</td>
+</tr>
+<tr>
+<td valign="top">AF_AttributeNew</td>
+<td valign="top">Adds a new <a href="https://github.com/joel-putnam/AntFarm/wiki/Attribute">attribute</a> (Column) to the  <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a>.
+<br/><br/>Command line options:
+<ul>
+<li>Name of <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> to add the <a href="https://github.com/joel-putnam/AntFarm/wiki/Attribute">attribute</a> to</li>
+<li><a href="https://github.com/joel-putnam/AntFarm/wiki/Attribute">Attribute type</a></li>
+<li>Additional option for either <a href="https://github.com/joel-putnam/AntFarm/wiki/Attribute">Attribute type</a> <a href="https://github.com/joel-putnam/AntFarm/wiki/Attribute">category</a>, <a href="https://github.com/joel-putnam/AntFarm/wiki/Attribute">geometric attribute</a></li>
+</ul></td>
+</tr>
+<tr>
+<td valign="top">AF_AttributeRename</td>
+<td valign="top">Rename an existing <a href="https://github.com/joel-putnam/AntFarm/wiki/Attribute">attribute</a>.
+<br/><br/>Command line options:
+<ul>
+<li>Name of <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> owning the <a href="https://github.com/joel-putnam/AntFarm/wiki/Attribute">attribute</a></li>
+<li>Name of <a href="https://github.com/joel-putnam/AntFarm/wiki/Attribute">Attribute</a> to be renamed</li>
+</ul></td>
+</tr>
+<tr>
+<td valign="top">AF_AttributeMove</td>
+<td valign="top">Move/Copy an <a href="https://github.com/joel-putnam/AntFarm/wiki/Attribute">attribute</a> from one <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> to another.
+(not implemented, see <a href="https://github.com/joel-putnam/AntFarm/issues/46">Issue 46</a>)</td>
+</tr>
+<tr>
+<td valign="top">AF_AttributeDelete</td>
+<td valign="top">Deletes an <a href="https://github.com/joel-putnam/AntFarm/wiki/Attribute">attribute</a> from a <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> and removes the data from the Rhino object.
+<br/><br/>Command line options:
+<ul>
+<li>Name of <a href="https://github.com/joel-putnam/AntFarm/wiki/DataSet">dataset</a> owning the <a href="https://github.com/joel-putnam/AntFarm/wiki/Attribute">attribute</a></li>
+<li>Name of <a href="https://github.com/joel-putnam/AntFarm/wiki/Attribute">Attribute</a> to be deleted</li>
+</ul></td>
+</tr>
+</table>
 
 ---
 
