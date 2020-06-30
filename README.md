@@ -6,6 +6,8 @@
 
 AntFarm is a <a href="https://www.rhino3d.com/" target="_blank">Rhino 3D</a> plugin written in C#. It permits user to store any type of data on a rhino object by storing the data on the geoemtrical object and in an in-memory SQLite database. Any operation is implemented as a Rhino commands, but can also be accessed through an UI. It also provides an API and a plugin system.
 
+---
+
 ## Table of Contents
 
 - [Installation](#installation)
@@ -13,14 +15,15 @@ AntFarm is a <a href="https://www.rhino3d.com/" target="_blank">Rhino 3D</a> plu
 - [Rhino Commands](#rhino-commands)
 - [API](#api)
 - [Plugins](#plugins)
-- [License](#license)
-
+- [CopyRight](#copyright)
 
 ---
 
 ### Installation
 
 Text how to install AntFarm and the plugins.
+
+---
 
 ### Data Structure
 
@@ -58,6 +61,8 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
     </td>
   </tr>
 </table>
+
+---
 
 ### Rhino Commands
 
@@ -209,9 +214,9 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
 
 ---
 
-### License
+### CopyRight
 
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+<!-- [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
-- **[MIT license](http://opensource.org/licenses/mit-license.php)**
+- **[MIT license](http://opensource.org/licenses/mit-license.php)** -->
 - Copyright 2020 © <a href="https://incore.design" target="_blank">InCore Design</a>.
