@@ -189,8 +189,8 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
 <td valign="top">Exports the data of an AntFarm <a href="#dataset">DataSet</a> to csv file.
 <br/><br/>Command line options:
 <ul>
-<li>Name of <a href="#dataset">DataSet</a> to export</li>
-<li>File location to export to</li>
+  <li><b>DataSet</b> - Name of <a href="#dataset">DataSet</a> to export</li>
+  <li><b>Browse</b> - File location to export to</li>
 </ul></td>
 </tr>
 <tr>
@@ -198,8 +198,8 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
 <td valign="top">Imports data from a csv file to an AntFarm <a href="#dataset">DataSet</a>.
 <br/><br/>Command line options:
 <ul>
-<li>Name of <a href="#dataset">DataSet</a> to import to</li>
-<li>File location to of csv file</li>
+<li><b>DataSet</b> - Name of <a href="#dataset">DataSet</a> to import to</li>
+<li><b>Browse</b> - File location of csv file</li>
 </ul></td>
 </tr>
 <tr>
@@ -207,9 +207,9 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
 <td valign="top">Delete a <a href="#dataset">DataSet</a> and its related data. Allows for deleting associated rhino objects.
 <br/><br/>Command line options:
 <ul>
-<li>Name of <a href="#dataset">DataSet</a> to be deleted</li>
-<li>YES - all Rhino objects will get deleted. If rhino objects exist in other <a href="#dataset">DataSet</a>s entries will also get removed from other <a href="#dataset">DataSet</a>s.</li>
-<li>NO - Rhino objects keep existing, but AntFarm data will get removed from the objects.</li>
+<li><b>DataSet</b> - Name of <a href="#dataset">DataSet</a> to be deleted</li>
+<li><b>Yes</b> - all Rhino objects will get deleted. If rhino objects exist in other <a href="#dataset">DataSet</a>s entries will also get removed from other <a href="#dataset">DataSet</a>s.</li>
+<li><b>No</b> - Rhino objects keep existing, but AntFarm data will get removed from the objects.</li>
 </ul></td>
 </tr>
 <tr>
