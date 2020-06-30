@@ -39,7 +39,8 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
     <td>
       <p>An AntFarm DataSet is represented as an in-memory data table. AntFarm is developed using an SQLite database. A DataSet can hold additional data specified in the attributes. The data not only gets stored in the database but also in the custom user data of the referenced Rhino object. A DataSet must be of unique name and can have the settings.</p>
       <b>Name</b> - AntFarm DataSet names are not case sensitive and must be unique.
-      <h4>Settings</h4>
+      <br />
+      <b>Settings</b>
       <ul>
         <li>Filter - Rhino <a href="https://developer.rhino3d.com/api/RhinoCommon/html/T_Rhino_DocObjects_ObjectType.htm" target="_blank">Object Type</a> Filter which defines the type of geometry object to be referenced in the DataSet.</li>
         <li></li>
@@ -51,6 +52,7 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
     <td>
       <p>AntFarm <a href="#dataset">DataSet</a>s can hold additional data in Attributes (<a href="#dataset">DataSet</a> columns).</p>
       <b>Name</b> - AntFarm <a href="#dataset">DataSet</a> Attribute names are not case sensitive and must be unique.
+      <br />
       <b>Data Types</b>
       <ul>
         <li>Boolean - base data type</li>  
