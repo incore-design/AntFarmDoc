@@ -340,7 +340,8 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
     <tr>
       <td valign="top"><b>Attribute</b></td>
       <td valign="top">Name of the <a href="#attribute">Attribute</a> to be removed.</td>
-    </tr></td>
+    </tr>
+  </table></td>
 </tr>
 </table>
 
