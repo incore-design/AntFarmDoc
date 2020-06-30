@@ -1,3 +1,6 @@
+<a href="https://incore.design/antfarm.html">
+  <img src="https://github.com/joel-putnam/AntFarm/blob/Master/Icons%2BImages/ant_2048.png" title="AntFarm" alt="AntFarm" width="200" target="_blank">
+</a>
 ## AntFarm
 
 AntFarm is a <a href="https://www.rhino3d.com/" target="_blank">Rhino 3D</a> plugin written in C#. It permits user to store any type of data on a rhino object by storing the data on the geoemtrical object and in an in-memory SQLite database. Any operation is implemented as a Rhino commands, but can also be accessed through an UI. It also provides an API and a plugin system.
