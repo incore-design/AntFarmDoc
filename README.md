@@ -327,12 +327,9 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
       <td valign="top">Name of <a href="#dataset">DataSet</a> to export</td>
     </tr>
     <tr>
-      <td valign="top"><b>Yes</b></td>
-      <td valign="top">All Rhino objects will get deleted. If rhino objects exist in other <a href="#dataset">DataSet</a>s entries will also get removed from other <a href="#dataset">DataSet</a>s</td>
-    </tr>
-    <tr>
-      <td valign="top"><b>No</b></td>
-      <td valign="top">Rhino objects keep existing, but AntFarm data will get removed from the objects.</td>
+      <td valign="top"><b>DeleteRhinoObjects</b></td>
+      <td valign="top"><p><b>Yes</b> - All Rhino objects will get deleted. If rhino objects exist in other <a href="#dataset">DataSet</a>s entries will also get removed from other <a href="#dataset">DataSet</a>s</p>
+      <p><b>Yes</b> - Rhino objects keep existing, but AntFarm data will get removed from the objects.</p></td>
     </tr>
   </table></td>
 </tr>
