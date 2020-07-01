@@ -37,14 +37,14 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
   <tr>
     <td valign="top" id="dataset">DataSet</td>
     <td>
-      <p>An AntFarm DataSet is represented as an in-memory data table. AntFarm is developed using an SQLite database. A DataSet can hold additional data specified in the attributes. The data not only gets stored in the database but also in the custom user data of the referenced Rhino object. A DataSet must be of unique name and can have the settings.</p>
+      <p>An AntFarm <a href="#dataset">DataSet</a> is represented as an in-memory data table. AntFarm is developed using an SQLite database. A <a href="#dataset">DataSet</a> can hold additional data specified in the <a href="#attribute">Attribute</a>s. The data not only gets stored in the database but also in the custom user data of the referenced Rhino object. A <a href="#dataset">DataSet</a> must be of unique name and can have the <a href="#dataset_settings">settings</a>.</p>
       <table>
         <tr>
           <td valign="top"><b>Name</b></td>
           <td valign="top">AntFarm DataSet names are not case sensitive and must be unique.</td>
         </tr>
         <tr>
-          <td valign="top"><b>Settings</b></td>
+          <td valign="top"><b id="dataset_settings">Settings</b></td>
           <td><table>
             <tr>
               <td valign="top"><b>Filter</b></td>
@@ -61,8 +61,8 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
   <tr>
     <td valign="top" id="attribute">Attribute</td>
     <td>
-      <p>AntFarm <a href="#dataset">DataSet</a>s can hold additional data in Attributes (<a href="#dataset">DataSet</a> columns).</p>
-      <b>Name</b> - AntFarm <a href="#dataset">DataSet</a> Attribute names are not case sensitive and must be unique.
+      <p>AntFarm <a href="#dataset">DataSet</a>s can hold additional data in <a href="#attribute">Attributes</a> (<a href="#dataset">DataSet</a> columns).</p>
+      <b>Name</b> - AntFarm <a href="#dataset">DataSet</a> <a href="#attribute">Attribute</a> names are not case sensitive and must be unique.
       <br />
       Attribute types:
       <table>
