@@ -149,7 +149,7 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
           <td valign="top">AntFarm Property Type names are not case sensitive and must be unique.</td>
         </tr>
         <tr>
-          <td valign="top"><b><a href="#property_type">Base data types</a></b></td>
+          <td valign="top"><b>Base data types</b></td>
           <td><table>
             <tr>
               <td valign="top"><b>Boolean</b></td>
@@ -183,8 +183,6 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
     <td valign="top" id="geometric">Geometric</td>
     <td>
       <p>An AntFarm specific data type that exposes geometrical data evaluated on the Rhino Object.</p>
-      <br />
-      Supported types:
       <table>
         <tr>
           <td valign="top"><b>None</b></td>
@@ -231,6 +229,7 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
   </tr>
 </table>
 
+
 ### Rhino Commands
 
 <table>
@@ -254,9 +253,10 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
 </tr>
 <tr>
 <td valign="top">AF_DataSetAddTo</td>
-<td valign="top">Adds Rhino objects to a <a href="#dataset">DataSet</a>. This allows the user to store additional data on a Rhino object.
+<td valign="top">
+  <p>Adds Rhino objects to a <a href="#dataset">DataSet</a>. This allows the user to store additional data on a Rhino object.</p>
   <br />
-  Command line options:
+  Command Options:
   <table>
     <tr>
       <td valign="top"><b>DataSet</b></td>
