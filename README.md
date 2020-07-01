@@ -113,53 +113,72 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
     <td valign="top" id="category_element">Category Element</td>
     <td>
       <p>An AntFarm Category Element is a value in an AntFarm <a href="#category">Category</a>. An AntFarm Category ELement can hold predefined <a href="#category_element_property">AntFarm Category Element Properties</a>.</p>
-      <b>Name</b> - AntFarm Category Element names are not case sensitive and must be unique.
-    </td>
+      <table>
+        <tr>
+          <td valign="top"><b>Name</b></td>
+          <td valign="top">AntFarm Category Element names are not case sensitive and must be unique.</td>
+        </tr>
+      </table></td>
   </tr>
   <tr>
     <td valign="top" id="category_element_property">Category Element Property</td>
     <td>
       <p>An AntFarm Category Element Property can hold additional data on an <a href="category_element">AntFarm Category Element</a>.</p>
-      <b>Name</b> - AntFarm Category Element Property names are not case sensitive and must be unique.
-      <br />
-      <b><a href="#property_type">Property Type</a></b> - <a href="#property_type">AntFarm Property Type</a> are AntFarm specific data types.
-      <br />
-      <b>Value</b> - A value based on the <a href="#property_type">AntFarm Property Type</a>.
-    </td>
+      <table>
+        <tr>
+          <td valign="top"><b>Name</b></td>
+          <td valign="top">AntFarm Category Element Property names are not case sensitive and must be unique.</td>
+        </tr>
+        <tr>
+          <td valign="top"><b><a href="#property_type">Property Type</a></b></td>
+          <td valign="top"><a href="#property_type">AntFarm Property Type</a> are AntFarm specific data types.</td>
+        </tr>
+        <tr>
+          <td valign="top"><b>Value</b></td>
+          <td valign="top">A value based on the <a href="#property_type">AntFarm Property Type</a>.</td>
+        </tr>
+      </table></td>
   </tr>
   <tr>
     <td valign="top" id="property_type">Property Type</td>
     <td>
       <p>An AntFarm Category Element Property can hold additional data on an <a href="category_element">AntFarm Category Element</a>.</p>
-      <b>Name</b> - AntFarm Property Type names are not case sensitive and must be unique.
-      <br />
-      Base data types:
       <table>
         <tr>
-          <td valign="top"><b>Boolean</b></td>
-          <td valign="top">base data type</td>
+          <td valign="top"><b>Name</b></td>
+          <td valign="top">AntFarm Property Type names are not case sensitive and must be unique.</td>
         </tr>
         <tr>
-          <td valign="top"><b><a href="#colour">Colour</a></b></td>
-          <td valign="top">AntFarm specific data type.</td>
+          <td valign="top"><b><a href="#property_type">Base data types</a></b></td>
+          <td>
+          <table>
+            <tr>
+              <td valign="top"><b>Boolean</b></td>
+              <td valign="top">base data type</td>
+            </tr>
+            <tr>
+              <td valign="top"><b><a href="#colour">Colour</a></b></td>
+              <td valign="top">AntFarm specific data type.</td>
+            </tr>
+            <tr>
+              <td valign="top"><b>DateTime</b></td>
+              <td valign="top">base data type</td>
+            </tr>
+            <tr>
+              <td valign="top"><b>Double</b></td>
+              <td valign="top">base data type</td>
+            </tr>
+            <tr>
+              <td valign="top"><b>Integer</b></td>
+              <td valign="top">base data type</td>
+            </tr>
+            <tr>
+              <td valign="top"><b>String</b></td>
+              <td valign="top">base data type</td>
+            </tr>
+          </table></td>
         </tr>
-        <tr>
-          <td valign="top"><b>DateTime</b></td>
-          <td valign="top">base data type</td>
-        </tr>
-        <tr>
-          <td valign="top"><b>Double</b></td>
-          <td valign="top">base data type</td>
-        </tr>
-        <tr>
-          <td valign="top"><b>Integer</b></td>
-          <td valign="top">base data type</td>
-        </tr>
-        <tr>
-          <td valign="top"><b>String</b></td>
-          <td valign="top">base data type</td>
-        </tr>
-      </table></td>
+      </td>
   </tr>
   <tr>
     <td valign="top" id="geometric">Geometric</td>
