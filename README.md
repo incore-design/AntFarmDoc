@@ -266,27 +266,45 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
   </table></td>
 </tr>
 <tr>
-<td valign="top">AF_DataSetChangeColor</td>
-<td valign="top">Allows for changing the <a href="#dataset">DataSet</a> color.</td>
+  <td valign="top">AF_DataSetChangeColor</td>
+  <td valign="top"><p>Allows for changing the <a href="#dataset">DataSet</a> color.</p></td>
 </tr>
 <tr>
-<td valign="top">AF_DataSetClose</td>
-<td valign="top">Close a displayed <a href="#dataset">DataSet</a> (default: current selected <a href="#dataset">DataSet</a>). Removes <a href="#dataset">DataSet</a> display from tabcontrol.</td>
+  <td valign="top">AF_DataSetClose</td>
+  <td valign="top"><p>Close a displayed <a href="#dataset">DataSet</a> (default: current selected <a href="#dataset">DataSet</a>). Removes <a href="#dataset">DataSet</a> display from tabcontrol.</p></td>
 </tr>
 <tr>
-<td valign="top">AF_DataSetCloseAll</td>
-<td valign="top">Close all displayed <a href="#dataset">DataSet</a>s. Remove all <a href="#dataset">DataSet</a>s from tabcontrol.</td>
+  <td valign="top">AF_DataSetCloseAll</td>
+  <td valign="top"><p>Close all displayed <a href="#dataset">DataSet</a>s. Remove all <a href="#dataset">DataSet</a>s from tabcontrol.</p></td>
 </tr>
 <tr>
-<td valign="top">AF_DataSetCloseAllButThis</td>
-<td valign="top">Close all displayed <a href="#dataset">DataSet</a>s but the current selected.</td>
+  <td valign="top">AF_DataSetCloseAllButThis</td>
+  <td valign="top"><p>Close all displayed <a href="#dataset">DataSet</a>s but the current selected.</p></td>
 </tr>
 <tr>
-<td valign="top">AF_DataSetCSVExport</td>
-<td valign="top">Exports the data of an AntFarm <a href="#dataset">DataSet</a> to csv file.
-  <br />
-  Command line options:
+  <td valign="top">AF_DataSetCSVExport</td>
+  <td valign="top"><p>Exports the data of an AntFarm <a href="#dataset">DataSet</a> to csv file.</p>
   <table>
+    <tr>
+      <td colspan="2" valign="top">Command options</td>
+    </tr>
+    <tr>
+      <td valign="top"><b>DataSet</b></td>
+      <td valign="top">Name of <a href="#dataset">DataSet</a> to add to.</td>
+    </tr>
+    <tr>
+      <td valign="top"><b>Browse</b></td>
+      <td valign="top">Opens a file dialog to specify file to export to</td>
+    </tr>
+  </table></td>
+</tr>
+<tr>
+  <td valign="top">AF_DataSetCSVImport</td>
+  <td valign="top"><p>Imports data from a csv file to an AntFarm <a href="#dataset">DataSet</a>.</p>
+  <table>
+    <tr>
+      <td colspan="2" valign="top">Command options</td>
+    </tr>
     <tr>
       <td valign="top"><b>DataSet</b></td>
       <td valign="top">Name of <a href="#dataset">DataSet</a> to export</td>
@@ -298,27 +316,12 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
   </table></td>
 </tr>
 <tr>
-<td valign="top">AF_DataSetCSVImport</td>
-<td valign="top">Imports data from a csv file to an AntFarm <a href="#dataset">DataSet</a>.
-  <br />
-  Command line options:
+  <td valign="top">AF_DataSetDelete</td>
+  <td valign="top"><p>Delete a <a href="#dataset">DataSet</a> and its related data. Allows for deleting associated rhino objects.</p>
   <table>
     <tr>
-      <td valign="top"><b>DataSet</b></td>
-      <td valign="top">Name of <a href="#dataset">DataSet</a> to export</td>
+      <td colspan="2" valign="top">Command options</td>
     </tr>
-    <tr>
-      <td valign="top"><b>Browse</b></td>
-      <td valign="top">Opens a file dialog to specify file to export to</td>
-    </tr>
-  </table></td>
-</tr>
-<tr>
-<td valign="top">AF_DataSetDelete</td>
-<td valign="top">Delete a <a href="#dataset">DataSet</a> and its related data. Allows for deleting associated rhino objects.
-  <br />
-  Command line options:
-  <table>
     <tr>
       <td valign="top"><b>DataSet</b></td>
       <td valign="top">Name of <a href="#dataset">DataSet</a> to export</td>
@@ -334,11 +337,12 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
   </table></td>
 </tr>
 <tr>
-<td valign="top">AF_DataSetNew</td>
-<td valign="top">Creates a new <a href="#dataset">DataSet</a> in AntFarm with in-memory data element and <a href="https://www.sqlite.org" target="_blank">SQLite</a> table.
-  <br />
-  Command line options:
+  <td valign="top">AF_DataSetNew</td>
+  <td valign="top"><p>Creates a new <a href="#dataset">DataSet</a> in AntFarm with in-memory data element and <a href="https://www.sqlite.org" target="_blank">SQLite</a> table.</p>
   <table>
+    <tr>
+      <td colspan="2" valign="top">Command options</td>
+    </tr>
     <tr>
       <td valign="top"><b>DataSet</b></td>
       <td valign="top">Name of <a href="#dataset">DataSet</a> (names respect case-sensitive spelling and must be alphanumeric)</td>
@@ -350,11 +354,12 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
   </table></td>
 </tr>
 <tr>
-<td valign="top">AF_DataSetOpen</td>
-<td valign="top">Opens an existing before closed dataset from the <a href="https://www.sqlite.org/" target="_blank">SQLite</a> in-memory database and adds it to the tab control.
-  <br />
-  Command line options:
+  <td valign="top">AF_DataSetOpen</td>
+  <td valign="top"><p>Opens an existing before closed dataset from the <a href="https://www.sqlite.org/" target="_blank">SQLite</a> in-memory database and adds it to the tab control.</p>
   <table>
+    <tr>
+      <td colspan="2" valign="top">Command options</td>
+    </tr>
     <tr>
       <td valign="top"><b>DataSet</b></td>
       <td valign="top">Name of <a href="#dataset">DataSet</a> (names respect case-sensitive spelling and must be alphanumeric)</td>
@@ -362,11 +367,12 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
   </table></td>
 </tr>
 <tr>
-<td valign="top">AF_DataSetRemoveFrom</td>
-<td valign="top">Removes a Rhino object from a <a href="#dataset">DataSet</a>.
-  <br />
-  Command line options:
+  <td valign="top">AF_DataSetRemoveFrom</td>
+  <td valign="top"><p>Removes a Rhino object from a <a href="#dataset">DataSet</a>.</p>
   <table>
+    <tr>
+      <td colspan="2" valign="top">Command options</td>
+    </tr>
     <tr>
       <td valign="top"><b>DataSet</b></td>
       <td valign="top">Name of <a href="#dataset">DataSet</a> to remove Rhino geometry objects from.</td>
@@ -374,11 +380,12 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
   </table></td>
 </tr>
 <tr>
-<td valign="top">AF_DataSetRename</td>
-<td valign="top">Rename an existing <a href="#dataset">DataSet</a> (default: current selected <a href="#dataset">DataSet</a>).
-  <br />
-  Command line options:
+  <td valign="top">AF_DataSetRename</td>
+  <td valign="top"><p>Rename an existing <a href="#dataset">DataSet</a> (default: current selected <a href="#dataset">DataSet</a>).</p>
   <table>
+    <tr>
+      <td colspan="2" valign="top">Command options</td>
+    </tr>
     <tr>
       <td valign="top"><b>DataSet</b></td>
       <td valign="top">Name of <a href="#dataset">DataSet</a> to rename.</td>
@@ -389,56 +396,59 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
 <td colspan="2">Commands related to <a href="#attribute">Attribute</a>s.</td>
 </tr>
 <tr>
-<td valign="top">AF_AttributeAdd</td>
-<td valign="top">Adds a new <a href="#attribute">Attribute</a> (Column) to the <a href="#dataset">DataSet</a>.
-  <br />
-  Command line options:
-  <table>
-    <tr>
-      <td valign="top"><b>DataSet</b></td>
-      <td valign="top">Name of <a href="#dataset">DataSet</a> to add the <a href="#attribute">Attribute</a>.</td>
-    </tr>
-    <tr>
-      <td valign="top"><b>Type</b></td>
-      <td valign="top"><a href="#attribute_type">Type</a> of <a href="#attribute">Attribute</a>.</td>
-    </tr>
-  </table></td>
+  <td valign="top">AF_AttributeAdd</td>
+  <td valign="top"><p>Adds a new <a href="#attribute">Attribute</a> (Column) to the <a href="#dataset">DataSet</a>.</p>
+    <table>
+      <tr>
+        <td colspan="2" valign="top">Command options</td>
+      </tr>
+      <tr>
+        <td valign="top"><b>DataSet</b></td>
+        <td valign="top">Name of <a href="#dataset">DataSet</a> to add the <a href="#attribute">Attribute</a>.</td>
+      </tr>
+      <tr>
+        <td valign="top"><b>Type</b></td>
+        <td valign="top"><a href="#attribute_type">Type</a> of <a href="#attribute">Attribute</a>.</td>
+      </tr>
+    </table></td>
 </tr>
 <tr>
-<td valign="top">AF_AttributeMove</td>
-<td valign="top">Not supported.</td>
+  <td valign="top">AF_AttributeMove</td>
+  <td valign="top">Not supported.</td>
 </tr>
 <tr>
-<td valign="top">AF_AttributeRename</td>
-<td valign="top">Rename an existing <a href="#attribute">Attribute</a>.
-  <br />
-  Command line options:
-  <table>
+  <td valign="top">AF_AttributeRename</td>
+  <td valign="top"><p>Rename an existing <a href="#attribute">Attribute</a>.</p>
+    <table>
     <tr>
-      <td valign="top"><b>DataSet</b></td>
-      <td valign="top">Name of <a href="#dataset">DataSet</a> that holds the <a href="#attribute">Attribute</a>.</td>
+      <td colspan="2" valign="top">Command options</td>
     </tr>
-    <tr>
-      <td valign="top"><b>Attribute</b></td>
-      <td valign="top">Name of the <a href="#attribute">Attribute</a> to be renamed.</td>
-    </tr>
-  </table></td>
+      <tr>
+        <td valign="top"><b>DataSet</b></td>
+        <td valign="top">Name of <a href="#dataset">DataSet</a> that holds the <a href="#attribute">Attribute</a>.</td>
+      </tr>
+      <tr>
+        <td valign="top"><b>Attribute</b></td>
+        <td valign="top">Name of the <a href="#attribute">Attribute</a> to be renamed.</td>
+      </tr>
+    </table></td>
 </tr>
 <tr>
-<td valign="top">AF_AttributeRemove</td>
-<td valign="top">Removes an <a href="#attribute">Attribute</a> from a <a href="#dataset">DataSet</a> and removes the associated data from the Rhino object.
-  <br />
-  Command line options:
-  <table>
-    <tr>
-      <td valign="top"><b>DataSet</b></td>
-      <td valign="top">Name of <a href="#dataset">DataSet</a> that holds the <a href="#attribute">Attribute</a>.</td>
-    </tr>
-    <tr>
-      <td valign="top"><b>Attribute</b></td>
-      <td valign="top">Name of the <a href="#attribute">Attribute</a> to be removed.</td>
-    </tr>
-  </table></td>
+  <td valign="top">AF_AttributeRemove</td>
+  <td valign="top"><p>Removes an <a href="#attribute">Attribute</a> from a <a href="#dataset">DataSet</a> and removes the associated data from the Rhino object.</p>
+    <table>
+      <tr>
+        <td colspan="2" valign="top">Command options</td>
+      </tr>
+      <tr>
+        <td valign="top"><b>DataSet</b></td>
+        <td valign="top">Name of <a href="#dataset">DataSet</a> that holds the <a href="#attribute">Attribute</a>.</td>
+      </tr>
+      <tr>
+        <td valign="top"><b>Attribute</b></td>
+        <td valign="top">Name of the <a href="#attribute">Attribute</a> to be removed.</td>
+      </tr>
+    </table></td>
 </tr>
 </table>
 
