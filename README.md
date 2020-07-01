@@ -150,8 +150,7 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
         </tr>
         <tr>
           <td valign="top"><b><a href="#property_type">Base data types</a></b></td>
-          <td>
-          <table>
+          <td><table>
             <tr>
               <td valign="top"><b>Boolean</b></td>
               <td valign="top">base data type</td>
@@ -178,7 +177,7 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
             </tr>
           </table></td>
         </tr>
-      </td>
+    </table></td>
   </tr>
   <tr>
     <td valign="top" id="geometric">Geometric</td>
