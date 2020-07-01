@@ -38,14 +38,25 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
     <td valign="top" id="dataset">DataSet</td>
     <td>
       <p>An AntFarm DataSet is represented as an in-memory data table. AntFarm is developed using an SQLite database. A DataSet can hold additional data specified in the attributes. The data not only gets stored in the database but also in the custom user data of the referenced Rhino object. A DataSet must be of unique name and can have the settings.</p>
-      <b>Name</b> - AntFarm DataSet names are not case sensitive and must be unique.
-      <br />
-      <b>Settings</b>
-      <ul>
-        <li>Filter - Rhino <a href="https://developer.rhino3d.com/api/RhinoCommon/html/T_Rhino_DocObjects_ObjectType.htm" target="_blank">Object Type</a> Filter which defines the type of geometry object to be referenced in the DataSet.</li>
-        <li>Colour - AntFarm <a href="#dataset">DataSet</a> colour</li>
-        </ul>
-    </td>
+      <table>
+        <tr>
+          <td valign="top"><b>Name</b></td>
+          <td valign="top">AntFarm DataSet names are not case sensitive and must be unique.</td>
+        </tr>
+        <tr>
+          <td valign="top"><b>Settings</b></td>
+          <td><table>
+            <tr>
+              <td valign="top"><b>Filter</b></td>
+              <td valign="top">Rhino <a href="https://developer.rhino3d.com/api/RhinoCommon/html/T_Rhino_DocObjects_ObjectType.htm" target="_blank">Object Type</a> Filter which defines the type of geometry object to be referenced in the DataSet.</td>
+            </tr>
+            <tr>
+              <td valign="top"><b><a href="#colour">Colour</a></b></td>
+              <td>AntFarm <a href="#dataset">DataSet</a> <a href="#colour">colour</a></td>
+            </tr>
+          </table></td>
+        </tr>
+      </table></td>
   </tr>  
   <tr>
     <td valign="top" id="attribute">Attribute</td>
@@ -188,7 +199,7 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
   <tr>
     <td valign="top" id="colour">Colour</td>
     <td>
-      <p>An AntFarm Category Element Property can hold additional data on an <a href="category_element">AntFarm Category Element</a>.</p>
+      <p>An AntFarm specific data type to hold a colour value (serializable).</p>
       <b>A</b> - Transparency value of type byte.
       <br />
       <b>R</b> - Red value of type byte.
@@ -230,14 +241,6 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
     <tr>
       <td valign="top"><b>DataSet</b></td>
       <td valign="top">Name of <a href="#dataset">DataSet</a> to add to.</td>
-    </tr>
-    <tr>
-      <td valign="top"><b>Yes</b></td>
-      <td valign="top">All Rhino objects will get deleted. If rhino objects exist in other <a href="#dataset">DataSet</a>s entries will also get removed from other <a href="#dataset">DataSet</a>s</td>
-    </tr>
-    <tr>
-      <td valign="top"><b>No</b></td>
-      <td valign="top">Rhino objects keep existing, but AntFarm data will get removed from the objects.</td>
     </tr>
   </table></td>
 </tr>
