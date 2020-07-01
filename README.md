@@ -53,18 +53,41 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
       <p>AntFarm <a href="#dataset">DataSet</a>s can hold additional data in Attributes (<a href="#dataset">DataSet</a> columns).</p>
       <b>Name</b> - AntFarm <a href="#dataset">DataSet</a> Attribute names are not case sensitive and must be unique.
       <br />
-      <b id="attribute_type">Attribute Type</b>
-      <ul>
-        <li>Boolean - base data type</li>  
-        <li><a href="#category">Category</a> - AntFarm specific data type</li>  
-        <li>DateTime - base data type</li>  
-        <li>Double - base data type</li>  
-        <li>Float - base data type</li>  
-        <li><a href="#geometric">Geometric</a> - AntFarm specific data type</li>  
-        <li>Integer - base data type</li>  
-        <li>String - base data type</li>  
-      </ul>
-    </td>
+      Attribute types:
+      <table>
+        <tr>
+          <td valign="top"><b>Boolean</b></td>
+          <td valign="top">base data type</td>
+        </tr>
+        <tr>
+          <td valign="top"><b><a href="#category">Category</a></b></td>
+          <td valign="top">AntFarm specific data type.</td>
+        </tr>
+        <tr>
+          <td valign="top"><b>DateTime</b></td>
+          <td valign="top">base data type</td>
+        </tr>
+        <tr>
+          <td valign="top"><b>Double</b></td>
+          <td valign="top">base data type</td>
+        </tr>
+        <tr>
+          <td valign="top"><b>Float</b></td>
+          <td valign="top">base data type</td>
+        </tr>
+        <tr>
+          <td valign="top"><b><a href="#geometric">Geometric</a></b></td>
+          <td valign="top">AntFarm specific data type.</td>
+        </tr>
+        <tr>
+          <td valign="top"><b>Integer</b></td>
+          <td valign="top">base data type</td>
+        </tr>
+        <tr>
+          <td valign="top"><b>String</b></td>
+          <td valign="top">base data type</td>
+        </tr>
+      </table></td>
   </tr>
   <tr>
     <td valign="top" id="category">Category</td>
@@ -97,32 +120,70 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
       <p>An AntFarm Category Element Property can hold additional data on an <a href="category_element">AntFarm Category Element</a>.</p>
       <b>Name</b> - AntFarm Property Type names are not case sensitive and must be unique.
       <br />
-      <b>Base Types</b>
-      <ul>
-        <li>Boolean - base data type</li>  
-        <li><a href="#colour">Colour</a> - AntFarm specific data type</li>  
-        <li>DateTime - base data type</li>  
-        <li>Double - base data type</li>
-        <li>Integer - base data type</li>  
-        <li>String - base data type</li>  
-      </ul>
-    </td>
+      Base data types:
+      <table>
+        <tr>
+          <td valign="top"><b>Boolean</b></td>
+          <td valign="top">base data type</td>
+        </tr>
+        <tr>
+          <td valign="top"><b><a href="#colour">Colour</a></b></td>
+          <td valign="top">AntFarm specific data type.</td>
+        </tr>
+        <tr>
+          <td valign="top"><b>DateTime</b></td>
+          <td valign="top">base data type</td>
+        </tr>
+        <tr>
+          <td valign="top"><b>Double</b></td>
+          <td valign="top">base data type</td>
+        </tr>
+        <tr>
+          <td valign="top"><b>Integer</b></td>
+          <td valign="top">base data type</td>
+        </tr>
+        <tr>
+          <td valign="top"><b>String</b></td>
+          <td valign="top">base data type</td>
+        </tr>
+      </table></td>
   </tr>
   <tr>
     <td valign="top" id="geometric">Geometric</td>
     <td>
       <p>An AntFarm specific data type that exposes geometrical data evaluated on the Rhino Object.</p>
-      <b>Supported Types</b>
-      <ul>
-        <li>None - base data type</li>  
-        <li>Length - evaluates the length of an object if property is supported</li>  
-        <li>Area - evaluates the area of an object if property is supported</li>  
-        <li>Volume - evaluates the Volume of an object if property is supported</li>  
-        <li>X_Value - evaluates the x-coordinate of an object if property is supported</li>  
-        <li>Y_Value - evaluates the x-coordinate of an object if property is supported</li>  
-        <li>Z_Value - evaluates the x-coordinate of an object if property is supported</li>  
-      </ul>
-    </td>
+      <br />
+      Supported types:
+      <table>
+        <tr>
+          <td valign="top"><b>None</b></td>
+          <td valign="top">default value</td>
+        </tr>
+        <tr>
+          <td valign="top"><b>Length</b></td>
+          <td valign="top">Evaluates the length of an object if property is supported.</td>
+        </tr>
+        <tr>
+          <td valign="top"><b>Area</b></td>
+          <td valign="top">Evaluates the area of an object if property is supported.</td>
+        </tr>
+        <tr>
+          <td valign="top"><b>Volume</b></td>
+          <td valign="top">Evaluates the volume of an object if property is supported.</td>
+        </tr>
+        <tr>
+          <td valign="top"><b>X_Value</b></td>
+          <td valign="top">Evaluates the x-coordinate of an object if property is supported.</td>
+        </tr>
+        <tr>
+          <td valign="top"><b>Y_Value</b></td>
+          <td valign="top">Evaluates the y-coordinate of an object if property is supported.</td>
+        </tr>
+        <tr>
+          <td valign="top"><b>Z_Value</b></td>
+          <td valign="top">Evaluates the z-coordinate of an object if property is supported.</td>
+        </tr>
+      </table></td>
   </tr>
   <tr>
     <td valign="top" id="colour">Colour</td>
@@ -163,10 +224,22 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
 <tr>
 <td valign="top">AF_DataSetAddTo</td>
 <td valign="top">Adds Rhino objects to a <a href="#dataset">DataSet</a>. This allows the user to store additional data on a Rhino object.
-<br/><br/>Command line options:
-<ul>
-<li><b>DataSet</b> - Name of <a href="#dataset">DataSet</a> to add to</li>
-</ul></td>
+  <br />
+  Command line options:
+  <table>
+    <tr>
+      <td valign="top"><b>DataSet</b></td>
+      <td valign="top">Name of <a href="#dataset">DataSet</a> to add to.</td>
+    </tr>
+    <tr>
+      <td valign="top"><b>Yes</b></td>
+      <td valign="top">All Rhino objects will get deleted. If rhino objects exist in other <a href="#dataset">DataSet</a>s entries will also get removed from other <a href="#dataset">DataSet</a>s</td>
+    </tr>
+    <tr>
+      <td valign="top"><b>No</b></td>
+      <td valign="top">Rhino objects keep existing, but AntFarm data will get removed from the objects.</td>
+    </tr>
+  </table></td>
 </tr>
 <tr>
 <td valign="top">AF_DataSetChangeColor</td>
