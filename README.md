@@ -1,10 +1,10 @@
-<a href="https://incore.design/antfarm.html">
+<a href="https://incore.design/antfarm.html" target="incore_design">
   <img src="https://incore.design/images/AntFarm_2048.png" title="AntFarm" alt="AntFarm" width="200" target="_blank">
 </a>
 
 ## AntFarm
 
-AntFarm is a <a href="https://www.rhino3d.com/" target="_blank">Rhino 3D</a> plugin written in C# using the Mircosofts .net framework. It permits user to store any type of data on a rhino object by storing the data on a geoemtrical object and in an in-memory SQLite database. Any operation is implemented as a Rhino command, but can also be accessed through an UI. It also provides an API and a plugin system.
+AntFarm is a <a href="https://www.rhino3d.com/" target="_blank">Rhino 3D</a> plugin written in C# using the <a href="https://docs.microsoft.com/en-us/dotnet/framework/" target="microsoft">Mircosofts .net framework (4.7.2)</a>. It permits user to store any type of data on a rhino object by storing the data on a geoemtrical object and in an in-memory SQLite database. Any operation is implemented as a Rhino command, but can also be accessed through an UI. It also provides an API and a plugin system.
 
 ---
 
