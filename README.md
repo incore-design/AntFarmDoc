@@ -4,7 +4,7 @@
 
 ## AntFarm
 
-AntFarm is a <a href="https://www.rhino3d.com/" target="_blank">Rhino 3D</a> plugin written in C#. It permits user to store any type of data on a rhino object by storing the data on the geoemtrical object and in an in-memory SQLite database. Any operation is implemented as a Rhino commands, but can also be accessed through an UI. It also provides an API and a plugin system.
+AntFarm is a <a href="https://www.rhino3d.com/" target="_blank">Rhino 3D</a> plugin written in C# using the Mircosofts .net framework. It permits user to store any type of data on a rhino object by storing the data on a geoemtrical object and in an in-memory SQLite database. Any operation is implemented as a Rhino command, but can also be accessed through an UI. It also provides an API and a plugin system.
 
 ---
 
@@ -62,41 +62,43 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
     <td valign="top" id="attribute">Attribute</td>
     <td>
       <p>AntFarm <a href="#dataset">DataSet</a>s can hold additional data in <a href="#attribute">Attributes</a> (<a href="#dataset">DataSet</a> columns).</p>
-      <b>Name</b> - AntFarm <a href="#dataset">DataSet</a> <a href="#attribute">Attribute</a> names are not case sensitive and must be unique.
-      <br />
-      Attribute types:
       <table>
         <tr>
-          <td valign="top"><b>Boolean</b></td>
-          <td valign="top">base data type</td>
+          <td valign="top"><b>Name</b></td>
+          <td valign="top">AntFarm <a href="#dataset">DataSet</a> <a href="#attribute">Attribute</a> names are not case sensitive and must be unique.</td>
         </tr>
         <tr>
-          <td valign="top"><b><a href="#category">Category</a></b></td>
-          <td valign="top">AntFarm specific data type.</td>
-        </tr>
-        <tr>
-          <td valign="top"><b>DateTime</b></td>
-          <td valign="top">base data type</td>
-        </tr>
-        <tr>
-          <td valign="top"><b>Double</b></td>
-          <td valign="top">base data type</td>
-        </tr>
-        <tr>
-          <td valign="top"><b>Float</b></td>
-          <td valign="top">base data type</td>
-        </tr>
-        <tr>
-          <td valign="top"><b><a href="#geometric">Geometric</a></b></td>
-          <td valign="top">AntFarm specific data type.</td>
-        </tr>
-        <tr>
-          <td valign="top"><b>Integer</b></td>
-          <td valign="top">base data type</td>
-        </tr>
-        <tr>
-          <td valign="top"><b>String</b></td>
-          <td valign="top">base data type</td>
+          <td valign="top"><b id="dataset_settings">Attribute types</b></td>
+          <td><table>
+            <tr>
+              <td valign="top"><b>Boolean</b></td>
+              <td valign="top">base data type</td>
+            </tr>
+            <tr>
+              <td valign="top"><b><a href="#category">Category</a></b></td>
+              <td valign="top">AntFarm specific data type.</td>
+            </tr>
+            <tr>
+              <td valign="top"><b>Double</b></td>
+              <td valign="top">base data type</td>
+            </tr>
+            <tr>
+              <td valign="top"><b>Float</b></td>
+              <td valign="top">base data type</td>
+            </tr>
+            <tr>
+              <td valign="top"><b><a href="#geometric">Geometric</a></b></td>
+              <td valign="top">AntFarm specific data type.</td>
+            </tr>
+            <tr>
+              <td valign="top"><b>Integer</b></td>
+              <td valign="top">base data type</td>
+            </tr>
+            <tr>
+              <td valign="top"><b>String</b></td>
+              <td valign="top">base data type</td>
+            </tr>
+          </table></td>
         </tr>
       </table></td>
   </tr>
