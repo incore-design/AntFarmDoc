@@ -456,13 +456,11 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
     </table></td>
 </tr>
 <tr>
-<td colspan="2">Commands related to <a href="#category">Categories</a>.</td>
+  <td colspan="2">Commands related to <a href="#category">Categories</a>.</td>
 </tr>
 <tr>
   <td valign="top">AF_Categories</td>
   <td valign="top"><p>Displays the <a href="#category">Category</a> window which provides an UI interface to add <a href="#category">Categories</a>, <a href="#category_element">Category Elements</a>, <a href="#category_element_property">Category Element Properties</a> and <a href="#property_type">Property Types</a>.</p></td>
-      </tr>
-    </table></td>
 </tr>
 <tr>
   <td valign="top">AF_CategoriesImport</td>
