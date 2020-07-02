@@ -234,36 +234,44 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
 
 <table>
 <tr>
-<td><b>Command</b></td>
-<td><b>Description</b></td>
+  <td><b>Command</b></td>
+  <td><b>Description</b></td>
 </tr>
 <tr>
-<td colspan="2">General Commands</td>
+  <td colspan="2">General Commands</td>
 </tr>
 <tr>
-<td valign="top">AntFarm</td>
-<td valign="top">Opens the main AntFarm dockable panel.</td>
+  <td valign="top">AntFarm</td>
+  <td valign="top">Opens the main AntFarm dockable panel.</td>
 </tr>
 <tr>
-<td valign="top">AF_Settings</td>
-<td valign="top">Opens the AntFarm settings dialog.</td>
+  <td valign="top">AF_Settings</td>
+  <td valign="top">Opens the AntFarm settings dialog.</td>
 </tr>
 <tr>
-<td colspan="2">Commands related to <a href="#dataset">DataSet</a>s.</td>
+  <td valign="top">AF_SchemaExport</td>
+  <td valign="top">needs work.</td>
 </tr>
 <tr>
-<td valign="top">AF_DataSetAddTo</td>
-<td valign="top">
-  <p>Adds Rhino objects to a <a href="#dataset">DataSet</a>. This allows the user to store additional data on a Rhino object.</p>
-  <table>
-    <tr>
-      <td colspan="2" valign="top">Command options</td>
-    </tr>
-    <tr>
-      <td valign="top"><b>DataSet</b></td>
-      <td valign="top">Name of <a href="#dataset">DataSet</a> to add to.</td>
-    </tr>
-  </table></td>
+  <td valign="top">AF_SchemaImport</td>
+  <td valign="top">needs work.</td>
+</tr>
+<tr>
+  <td colspan="2">Commands related to <a href="#dataset">DataSet</a>s.</td>
+</tr>
+<tr>
+  <td valign="top">AF_DataSetAddTo</td>
+  <td valign="top">
+    <p>Adds Rhino objects to a <a href="#dataset">DataSet</a>. This allows the user to store additional data on a Rhino object.</p>
+    <table>
+      <tr>
+        <td colspan="2" valign="top">Command options</td>
+      </tr>
+      <tr>
+        <td valign="top"><b>DataSet</b></td>
+        <td valign="top">Name of <a href="#dataset">DataSet</a> to add to.</td>
+      </tr>
+    </table></td>
 </tr>
 <tr>
   <td valign="top">AF_DataSetChangeColor</td>
@@ -324,7 +332,7 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
     </tr>
     <tr>
       <td valign="top"><b>DataSet</b></td>
-      <td valign="top">Name of <a href="#dataset">DataSet</a> to export</td>
+      <td valign="top">Name of <a href="#dataset">DataSet</a> to delete.</td>
     </tr>
     <tr>
       <td valign="top"><b>DeleteRhinoObjects</b></td>
@@ -453,6 +461,137 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
 <tr>
   <td valign="top">AF_Categories</td>
   <td valign="top"><p>Displays the <a href="#category">Category</a> window which provides an UI interface to add <a href="#category">Categories</a>, <a href="#category_element">Category Elements</a>, <a href="#category_element_property">Category Element Properties</a> and <a href="#property_type">Property Types</a>.</p></td>
+      </tr>
+    </table></td>
+</tr>
+<tr>
+  <td valign="top">AF_CategoriesImport</td>
+  <td valign="top"><p>Opens a file window dialog to import an AntFarmCategory (*.afc) file.</p></td>
+</tr>
+<tr>
+  <td valign="top">AF_CategoriesExport</td>
+  <td valign="top"><p>Exports all existing <a href="#category">Categories</a> including <a href="#category_element">Category Elements</a>, <a href="#category_element_property">Category Element Properties</a> and <a href="#property_type">Property Types</a>.</p>
+    <table>
+      <tr>
+        <td colspan="2" valign="top">Command options</td>
+      </tr>
+      <tr>
+        <td valign="top"><b>Browse</b></td>
+        <td valign="top">Opens a file window dialog to specify the file (*.afc) location and name.</td>
+      </tr>
+    </table></td>
+</tr>
+<tr>
+  <td valign="top">AF_CategoryDelete</td>
+  <td valign="top"><p>Deletes an existing <a href="#category">Category</a> from AntFarm. <a href="#category">Categories</a> in use can not be deleted.</p>
+    <table>
+      <tr>
+        <td colspan="2" valign="top">Command options</td>
+      </tr>
+      <tr>
+        <td valign="top"><b><a href="#category">Category</a></b></td>
+        <td valign="top">Name of <a href="#category">Category</a> to delete.</td>
+      </tr>
+    </table></td>
+</tr>
+<tr>
+  <td valign="top">AF_CategoryNew</td>
+  <td valign="top"><p>Create a new <a href="#category">Category</a> in AntFarm.</p>
+    <table>
+      <tr>
+        <td colspan="2" valign="top">Command options</td>
+      </tr>
+      <tr>
+        <td valign="top"><b>Name</b></td>
+        <td valign="top">Name of <a href="#category">Category</a> to create.</td>
+      </tr>
+    </table></td>
+</tr>
+<tr>
+  <td valign="top">AF_CategoryRename</td>
+  <td valign="top"><p>Rename an existing <a href="#category">Category</a> in AntFarm.</p>
+    <table>
+      <tr>
+        <td colspan="2" valign="top">Command options</td>
+      </tr>
+      <tr>
+        <td valign="top"><b><a href="#category">Category</a></b></td>
+        <td valign="top">Name of <a href="#category">Category</a> to rename.</td>
+      </tr>
+    </table></td>
+</tr>
+<tr>
+  <td colspan="2">Commands related to <a href="#category_element">Category Elements</a>.</td>
+</tr>
+<tr>
+  <td valign="top">AF_ElementAdd</td>
+  <td valign="top"><p>Adds a new <a href="#category_element">Category Elements</a> to an exisiting <a href="#category">Category</a>.</p>
+    <table>
+      <tr>
+        <td colspan="2" valign="top">Command options</td>
+      </tr>
+      <tr>
+        <td valign="top"><b>Name</b></td>
+        <td valign="top">Name of <a href="#category_element">Category Element</a>.</td>
+      </tr>
+      <tr>
+        <td valign="top"><b><a href="#category">Category</a></b></td>
+        <td valign="top">Name of <a href="#category">Category</a> to add the <a href="#category_element">Category Element</a> to.</td>
+      </tr>
+    </table></td>
+</tr>
+<tr>
+  <td valign="top">AF_ElementCopy</td>
+  <td valign="top"><p>Copies an existing <a href="#category_element">Category Element</a> from one <a href="#category">Category</a> to another including all attached <a href="#category_element_property">Category Element Properties</a>.</p>
+    <table>
+      <tr>
+        <td colspan="2" valign="top">Command options</td>
+      </tr>
+      <tr>
+        <td valign="top"><b><a href="#category">FromCategory</a></b></td>
+        <td valign="top">Name of <a href="#category">Category</a> to copy from.</td>
+      </tr>
+      <tr>
+        <td valign="top"><b><a href="#category">ToCategory</a></b></td>
+        <td valign="top">Name of <a href="#category">Category</a> to copy to.</td>
+      </tr>
+      <tr>
+        <td valign="top"><b><a href="#category_element">Element</a></b></td>
+        <td valign="top">Name of <a href="#category_element">Category Element</a> to copy.</td>
+      </tr>
+    </table></td>
+</tr>
+<tr>
+  <td valign="top">AF_ElementRemove</td>
+  <td valign="top"><p>Removes an existing <a href="#category_element">Category Element</a> from a <a href="#category">Category</a>. <a href="#category_element">Category Element</a> in use will not be removed.</p>
+    <table>
+      <tr>
+        <td colspan="2" valign="top">Command options</td>
+      </tr>
+      <tr>
+        <td valign="top"><b><a href="#category">Category</a></b></td>
+        <td valign="top">Name of <a href="#category">Category</a> of <a href="#category_element">Category Element</a>.</td>
+      </tr>
+      <tr>
+        <td valign="top"><b><a href="#category_element">Element</a></b></td>
+        <td valign="top">Name of <a href="#category_element">Category Element</a> to remove.</td>
+      </tr>
+    </table></td>
+</tr>
+<tr>
+  <td valign="top">AF_ElementRename</td>
+  <td valign="top"><p>Rename an existing <a href="#category_element">Category Element</a>.</p>
+    <table>
+      <tr>
+        <td colspan="2" valign="top">Command options</td>
+      </tr>
+      <tr>
+        <td valign="top"><b><a href="#category">Category</a></b></td>
+        <td valign="top">Name of <a href="#category">Category</a> of <a href="#category_element">Category Element</a>.</td>
+      </tr>
+      <tr>
+        <td valign="top"><b><a href="#category_element">Element</a></b></td>
+        <td valign="top">Name of <a href="#category_element">Category Element</a> to rename.</td>
       </tr>
     </table></td>
 </tr>
