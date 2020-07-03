@@ -534,7 +534,7 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
       </tr>
       <tr>
         <td valign="top"><b><a href="#category">Category</a></b></td>
-        <td valign="top">Name of <a href="#category">Category</a> to add the <a href="#category_element">Category Element</a> to.</td>
+        <td valign="top">Name of <a href="#category">Category</a> to add to the <a href="#category_element">Category Element</a>.</td>
       </tr>
     </table></td>
 </tr>
@@ -590,6 +590,51 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
       <tr>
         <td valign="top"><b><a href="#category_element">Element</a></b></td>
         <td valign="top">Name of <a href="#category_element">Category Element</a> to rename.</td>
+      </tr>
+    </table></td>
+</tr>
+<tr>
+  <td colspan="2">Commands related to <a href="#category_element_property">Category Element Properties</a>.</td>
+</tr>
+<tr>
+  <td valign="top">AF_PropertyAdd</td>
+  <td valign="top"><p>Adds a new <a href="#category_element_property">Category Element Property</a> to an exisiting <a href="#category_element">Category Element</a>.</p>
+    <table>
+      <tr>
+        <td colspan="2" valign="top">Command options</td>
+      </tr>
+      <tr>
+        <td valign="top"><b>Category</b></td>
+        <td valign="top">Name of <a href="#category">Category</a> hosting the <a href="#category">Category Element</a> to add to the <a href="#category_element_property">Category Element Property</a>.</td>
+      </tr>
+      <tr>
+        <td valign="top"><b>Element</b></td>
+        <td valign="top">Name of the <a href="#category_element">Category Element</a> to add to the <a href="#category_element_property">Category Element Property</a>.</td>
+      </tr>
+    </table></td>
+</tr>
+<tr>
+  <td valign="top">AF_PropertyRemove</td>
+  <td valign="top"><p>Remove a <a href="#category_element_property">Category Element Property</a> from a <a href="#category_element">Category Element</a>.</p>
+    <table>
+      <tr>
+        <td colspan="2" valign="top">Command options</td>
+      </tr>
+      <tr>
+        <td valign="top"><b>Category</b></td>
+        <td valign="top">Name of <a href="#category">Category</a> hosting the <a href="#category">Category Element</a> to remove from the <a href="#category_element_property">Category Element Property</a>.</td>
+      </tr>
+      <tr>
+        <td valign="top"><b>Element</b></td>
+        <td valign="top">Name of the <a href="#category">Category Element</a> to remove from the <a href="#category_element_property">Category Element Property</a>.</td>
+      </tr>
+      <tr>
+        <td valign="top"><b>Element</b></td>
+        <td valign="top">Name of the <a href="#category_element">Category Element</a> to remove from the <a href="#category_element_property">Category Element Property</a>.</td>
+      </tr>
+      <tr>
+        <td valign="top"><b>Property</b></td>
+        <td valign="top">Name of the <a href="#category_element_property">Category Element Property</a> to remove.</td>
       </tr>
     </table></td>
 </tr>
