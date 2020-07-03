@@ -229,6 +229,7 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
   </tr>
 </table>
 
+---
 
 ### Rhino Commands
 
@@ -726,6 +727,8 @@ Any interaction with AntFarm related functionality is using Rhino commands. The 
 </tr>
 </table>
 
+---
+
 ### API
 
 ---
@@ -740,3 +743,5 @@ Any interaction with AntFarm related functionality is using Rhino commands. The 
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)** -->
 - Copyright 2020 © <a href="https://incore.design" target="_blank">InCore Design</a>.
+
+---
