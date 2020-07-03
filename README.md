@@ -626,15 +626,99 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
       </tr>
       <tr>
         <td valign="top"><b>Element</b></td>
-        <td valign="top">Name of the <a href="#category">Category Element</a> to remove from the <a href="#category_element_property">Category Element Property</a>.</td>
-      </tr>
-      <tr>
-        <td valign="top"><b>Element</b></td>
         <td valign="top">Name of the <a href="#category_element">Category Element</a> to remove from the <a href="#category_element_property">Category Element Property</a>.</td>
       </tr>
       <tr>
         <td valign="top"><b>Property</b></td>
         <td valign="top">Name of the <a href="#category_element_property">Category Element Property</a> to remove.</td>
+      </tr>
+    </table></td>
+</tr>
+<tr>
+  <td valign="top">AF_PropertyRename</td>
+  <td valign="top"><p>Rename a <a href="#category_element_property">Category Element Property</a>.</p>
+    <table>
+      <tr>
+        <td colspan="2" valign="top">Command options</td>
+      </tr>
+      <tr>
+        <td valign="top"><b>Category</b></td>
+        <td valign="top">Name of <a href="#category">Category</a> hosting the <a href="#category">Category Element</a> that hosts the <a href="#category_element_property">Category Element Property</a> to rename.</td>
+      </tr>
+      <tr>
+        <td valign="top"><b>Element</b></td>
+        <td valign="top">Name of the <a href="#category_element">Category Element</a> hosting the <a href="#category_element_property">Category Element Property</a> to rename.</td>
+      </tr>
+      <tr>
+        <td valign="top"><b>Property</b></td>
+        <td valign="top">Name of the <a href="#category_element_property">Category Element Property</a> to rename.</td>
+      </tr>
+    </table></td>
+</tr>  
+<tr>
+  <td valign="top">AF_PropertyUpdateValue</td>
+  <td valign="top"><p>Update the stored value in a <a href="#category_element_property">Category Element Property</a>.</p>
+    <table>
+      <tr>
+        <td colspan="2" valign="top">Command options</td>
+      </tr>
+      <tr>
+        <td valign="top"><b>Category</b></td>
+        <td valign="top">Name of <a href="#category">Category</a> hosting the <a href="#category">Category Element</a> that hosts the <a href="#category_element_property">Category Element Property</a>.</td>
+      </tr>
+      <tr>
+        <td valign="top"><b>Element</b></td>
+        <td valign="top">Name of the <a href="#category_element">Category Element</a> hosting the <a href="#category_element_property">Category Element Property</a>.</td>
+      </tr>
+      <tr>
+        <td valign="top"><b>Property</b></td>
+        <td valign="top">Name of the <a href="#category_element_property">Category Element Property</a> to update the value.</td>
+      </tr>
+    </table></td>
+</tr>
+<tr>
+  <td colspan="2">Commands related to <a href="#property_type">Property Types</a>.</td>
+</tr>  
+<tr>
+  <td valign="top">AF_PropertyTypeDelete</td>
+  <td valign="top"><p>Delete a <a href="#property_type">Property Type</a>.</p>
+    <table>
+      <tr>
+        <td colspan="2" valign="top">Command options</td>
+      </tr>
+      <tr>
+        <td valign="top"><b>PropertyType</b></td>
+        <td valign="top">Name of <a href="#property_type">Property Type</a> to delete.</td>
+      </tr>
+    </table></td>
+</tr>  
+<tr>
+  <td valign="top">AF_PropertyTypeNew</td>
+  <td valign="top"><p>Create a new <a href="#property_type">Property Type</a>.</p>
+    <table>
+      <tr>
+        <td colspan="2" valign="top">Command options</td>
+      </tr>
+      <tr>
+        <td valign="top"><b>Name</b></td>
+        <td valign="top">Name of <a href="#property_type">Property Type</a>.</td>
+      </tr>
+      <tr>
+        <td valign="top"><b>BaseType</b></td>
+        <td valign="top">Name of <a href="#property_type">Property Base Type</a>.</td>
+      </tr>
+    </table></td>
+</tr>  
+<tr>
+  <td valign="top">AF_PropertyTypeRename</td>
+  <td valign="top"><p>Rename a <a href="#property_type">Property Type</a>.</p>
+    <table>
+      <tr>
+        <td colspan="2" valign="top">Command options</td>
+      </tr>
+      <tr>
+        <td valign="top"><b>PropertyType</b></td>
+        <td valign="top">Name of <a href="#property_type">Property Type</a> to rename.</td>
       </tr>
     </table></td>
 </tr>
