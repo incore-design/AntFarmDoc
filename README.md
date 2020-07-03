@@ -489,7 +489,7 @@ Any interaction with AntFarm related functionality is using Rhino commands. The 
         <td colspan="2" valign="top">Command options</td>
       </tr>
       <tr>
-        <td valign="top"><b><a href="#category">Category</a></b></td>
+        <td valign="top"><b>Category</b></td>
         <td valign="top">Name of <a href="#category">Category</a> to delete.</td>
       </tr>
     </table></td>
