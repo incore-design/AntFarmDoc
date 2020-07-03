@@ -236,8 +236,8 @@ Any interaction with AntFarm related functionality is using Rhino commands. The 
 
 <table>
 <tr>
-  <td><b>Command</b></td>
-  <td><b>Description</b></td>
+  <th><b>Command</b></th>
+  <th><b>Description</b></th>
 </tr>
 <tr>
   <td colspan="2">General Commands</td>
