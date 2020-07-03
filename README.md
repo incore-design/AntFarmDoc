@@ -232,6 +232,8 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
 
 ### Rhino Commands
 
+Any interaction with AntFarm related functionality is using Rhino commands. The provided UI is calling the same Rhino commands. 
+
 <table>
 <tr>
   <td><b>Command</b></td>
@@ -513,7 +515,7 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
         <td colspan="2" valign="top">Command options</td>
       </tr>
       <tr>
-        <td valign="top"><b><a href="#category">Category</a></b></td>
+        <td valign="top"><b>Category</b></td>
         <td valign="top">Name of <a href="#category">Category</a> to rename.</td>
       </tr>
     </table></td>
@@ -533,7 +535,7 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
         <td valign="top">Name of <a href="#category_element">Category Element</a>.</td>
       </tr>
       <tr>
-        <td valign="top"><b><a href="#category">Category</a></b></td>
+        <td valign="top"><b>Category</b></td>
         <td valign="top">Name of <a href="#category">Category</a> to add to the <a href="#category_element">Category Element</a>.</td>
       </tr>
     </table></td>
@@ -546,15 +548,15 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
         <td colspan="2" valign="top">Command options</td>
       </tr>
       <tr>
-        <td valign="top"><b><a href="#category">FromCategory</a></b></td>
+        <td valign="top"><b>FromCategory</b></td>
         <td valign="top">Name of <a href="#category">Category</a> to copy from.</td>
       </tr>
       <tr>
-        <td valign="top"><b><a href="#category">ToCategory</a></b></td>
+        <td valign="top"><b>ToCategory</b></td>
         <td valign="top">Name of <a href="#category">Category</a> to copy to.</td>
       </tr>
       <tr>
-        <td valign="top"><b><a href="#category_element">Element</a></b></td>
+        <td valign="top"><b>Element</b></td>
         <td valign="top">Name of <a href="#category_element">Category Element</a> to copy.</td>
       </tr>
     </table></td>
@@ -567,11 +569,11 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
         <td colspan="2" valign="top">Command options</td>
       </tr>
       <tr>
-        <td valign="top"><b><a href="#category">Category</a></b></td>
+        <td valign="top"><b>Category</b></td>
         <td valign="top">Name of <a href="#category">Category</a> of <a href="#category_element">Category Element</a>.</td>
       </tr>
       <tr>
-        <td valign="top"><b><a href="#category_element">Element</a></b></td>
+        <td valign="top"><b>Element</b></td>
         <td valign="top">Name of <a href="#category_element">Category Element</a> to remove.</td>
       </tr>
     </table></td>
@@ -584,11 +586,11 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
         <td colspan="2" valign="top">Command options</td>
       </tr>
       <tr>
-        <td valign="top"><b><a href="#category">Category</a></b></td>
+        <td valign="top"><b>Category</b></td>
         <td valign="top">Name of <a href="#category">Category</a> of <a href="#category_element">Category Element</a>.</td>
       </tr>
       <tr>
-        <td valign="top"><b><a href="#category_element">Element</a></b></td>
+        <td valign="top"><b>Element</b></td>
         <td valign="top">Name of <a href="#category_element">Category Element</a> to rename.</td>
       </tr>
     </table></td>
