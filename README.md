@@ -731,6 +731,8 @@ Any interaction with AntFarm related functionality is using Rhino commands. The 
 
 ### API
 
+Please refer to <a href="https://incore.design/antfarm_api/API/index.html" target="anfarm_api">AntFarm API</a> for further information.
+
 ---
 
 ### Plugins
