@@ -37,7 +37,7 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
   <tr>
     <td valign="top" id="dataset">DataSet</td>
     <td>
-      <p>An AntFarm <a href="#dataset">DataSet</a> is represented as an in-memory data table. AntFarm is developed using an SQLite database. A <a href="#dataset">DataSet</a> can hold additional data specified in the <a href="#attribute">Attribute</a>s. The data not only gets stored in the database but also in the custom user data of the referenced Rhino object. A <a href="#dataset">DataSet</a> must be of unique name and can have the <a href="#dataset_settings">settings</a>.</p>
+      <p>An AntFarm <a href="#dataset">DataSet</a> is represented as an in-memory data table. AntFarm is developed using an SQLite database. A <a href="#dataset">DataSet</a> can hold additional data specified in the <a href="#attribute">Attribute</a>s. The data not only gets stored in the database but also in the custom user data of the referenced Rhino object. A <a href="#dataset">DataSet</a> must be of unique name and can have the following <a href="#dataset_settings">settings</a>.</p>
       <table>
         <tr>
           <td valign="top"><b>Name</b></td>
@@ -48,7 +48,7 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
           <td><table>
             <tr>
               <td valign="top"><b>Filter</b></td>
-              <td valign="top">Rhino <a href="https://developer.rhino3d.com/api/RhinoCommon/html/T_Rhino_DocObjects_ObjectType.htm" target="_blank">Object Type</a> Filter which defines the type of geometry object to be referenced in the DataSet.</td>
+              <td valign="top">Rhino <a href="https://developer.rhino3d.com/api/RhinoCommon/html/T_Rhino_DocObjects_ObjectType.htm" target="_blank">Object Type</a> Filter which defines the type of geometrical object to be referenced in the DataSet.</td>
             </tr>
             <tr>
               <td valign="top"><b><a href="#colour">Colour</a></b></td>
@@ -328,7 +328,7 @@ Any interaction with AntFarm related functionality is using Rhino commands. The 
 </tr>
 <tr>
   <td valign="top">AF_DataSetDelete</td>
-  <td valign="top"><p>Delete a <a href="#dataset">DataSet</a> and its related data. Allows for deleting associated rhino objects.</p>
+  <td valign="top"><p>Delete a <a href="#dataset">DataSet</a> and its related data. Allows deleting of associated rhino objects.</p>
   <table>
     <tr>
       <td colspan="2" valign="top">Command options</td>
@@ -339,7 +339,7 @@ Any interaction with AntFarm related functionality is using Rhino commands. The 
     </tr>
     <tr>
       <td valign="top"><b>DeleteRhinoObjects</b></td>
-      <td valign="top"><p><b>Yes</b> - All Rhino objects will get deleted. If rhino objects exist in other <a href="#dataset">DataSet</a>s entries will also get removed from other <a href="#dataset">DataSet</a>s</p>
+      <td valign="top"><p><b>Yes</b> - All Rhino objects will get deleted. If rhino objects exist in other <a href="#dataset">DataSet</a>s, entries will also get removed from other <a href="#dataset">DataSet</a>s</p>
       <p><b>No</b> - Rhino objects keep existing, but AntFarm data will get removed from the objects.</p></td>
     </tr>
   </table></td>
@@ -389,7 +389,7 @@ Any interaction with AntFarm related functionality is using Rhino commands. The 
 </tr>
 <tr>
   <td valign="top">AF_DataSetRename</td>
-  <td valign="top"><p>Rename an existing <a href="#dataset">DataSet</a> (default: current selected <a href="#dataset">DataSet</a>).</p>
+  <td valign="top"><p>Rename an <a href="#dataset">DataSet</a> (default: current selected <a href="#dataset">DataSet</a>).</p>
   <table>
     <tr>
       <td colspan="2" valign="top">Command options</td>
@@ -463,7 +463,7 @@ Any interaction with AntFarm related functionality is using Rhino commands. The 
 </tr>
 <tr>
   <td valign="top">AF_Categories</td>
-  <td valign="top"><p>Displays the <a href="#category">Category</a> window which provides an UI interface to add <a href="#category">Categories</a>, <a href="#category_element">Category Elements</a>, <a href="#category_element_property">Category Element Properties</a> and <a href="#property_type">Property Types</a>.</p></td>
+  <td valign="top"><p>Displays the <a href="#category">Category</a> window which provides a UI interface to add <a href="#category">Categories</a>, <a href="#category_element">Category Elements</a>, <a href="#category_element_property">Category Element Properties</a> and <a href="#property_type">Property Types</a>.</p></td>
 </tr>
 <tr>
   <td valign="top">AF_CategoriesImport</td>
@@ -484,7 +484,7 @@ Any interaction with AntFarm related functionality is using Rhino commands. The 
 </tr>
 <tr>
   <td valign="top">AF_CategoryDelete</td>
-  <td valign="top"><p>Deletes an existing <a href="#category">Category</a> from AntFarm. <a href="#category">Categories</a> in use can not be deleted.</p>
+  <td valign="top"><p>Deletes a <a href="#category">Category</a> from AntFarm. <a href="#category">Categories</a> in use can not be deleted.</p>
     <table>
       <tr>
         <td colspan="2" valign="top">Command options</td>
@@ -510,7 +510,7 @@ Any interaction with AntFarm related functionality is using Rhino commands. The 
 </tr>
 <tr>
   <td valign="top">AF_CategoryRename</td>
-  <td valign="top"><p>Rename an existing <a href="#category">Category</a> in AntFarm.</p>
+  <td valign="top"><p>Rename a <a href="#category">Category</a> in AntFarm.</p>
     <table>
       <tr>
         <td colspan="2" valign="top">Command options</td>
@@ -526,7 +526,7 @@ Any interaction with AntFarm related functionality is using Rhino commands. The 
 </tr>
 <tr>
   <td valign="top">AF_ElementAdd</td>
-  <td valign="top"><p>Adds a new <a href="#category_element">Category Elements</a> to an exisiting <a href="#category">Category</a>.</p>
+  <td valign="top"><p>Adds a new <a href="#category_element">Category Elements</a> to a <a href="#category">Category</a>.</p>
     <table>
       <tr>
         <td colspan="2" valign="top">Command options</td>
@@ -543,7 +543,7 @@ Any interaction with AntFarm related functionality is using Rhino commands. The 
 </tr>
 <tr>
   <td valign="top">AF_ElementCopy</td>
-  <td valign="top"><p>Copies an existing <a href="#category_element">Category Element</a> from one <a href="#category">Category</a> to another including all attached <a href="#category_element_property">Category Element Properties</a>.</p>
+  <td valign="top"><p>Copies a <a href="#category_element">Category Element</a> from one <a href="#category">Category</a> to another including all attached <a href="#category_element_property">Category Element Properties</a>.</p>
     <table>
       <tr>
         <td colspan="2" valign="top">Command options</td>
@@ -564,7 +564,7 @@ Any interaction with AntFarm related functionality is using Rhino commands. The 
 </tr>
 <tr>
   <td valign="top">AF_ElementRemove</td>
-  <td valign="top"><p>Removes an existing <a href="#category_element">Category Element</a> from a <a href="#category">Category</a>. <a href="#category_element">Category Element</a> in use will not be removed.</p>
+  <td valign="top"><p>Removes a <a href="#category_element">Category Element</a> from a <a href="#category">Category</a>. <a href="#category_element">Category Element</a> in use will not be removed.</p>
     <table>
       <tr>
         <td colspan="2" valign="top">Command options</td>
@@ -581,7 +581,7 @@ Any interaction with AntFarm related functionality is using Rhino commands. The 
 </tr>
 <tr>
   <td valign="top">AF_ElementRename</td>
-  <td valign="top"><p>Rename an existing <a href="#category_element">Category Element</a>.</p>
+  <td valign="top"><p>Rename a <a href="#category_element">Category Element</a>.</p>
     <table>
       <tr>
         <td colspan="2" valign="top">Command options</td>
