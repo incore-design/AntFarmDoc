@@ -8,7 +8,7 @@ AntFarm is a <a href="https://www.rhino3d.com/" target="_blank">Rhino 3D v7</a> 
 
 Currently in public open <a href="https://en.wikipedia.org/wiki/Software_release_life_cycle#Beta" target="_blank">Beta</a> the core datamodel and functions are considered to be feature complete, but we are still developing the tools as we push for our initial release and API with the current focus on usaiblity inhancements, data manipulation and analysis inhancements and core optimizations. While in beta all Antfarm tools will be available to the general public. We have not yet settled on final licensing and price terms.  
 
-CoreData Model Includes:
+CoreData Model features Include:
 
 - Create Datasets & Atrribtues to add to Rhino Geometry Objects.
 - Serialize all data to .3dm files.
@@ -17,8 +17,8 @@ CoreData Model Includes:
 - Track Rhino geomety attributes such as area, location, volume and length for appropriate geometries.
 - Internal SQL interpreter.
 - Public API for futher Domain Specific tools and Inhancements.
-  - Antfarm Urban Data (GIS) plugin for Antfarm.
-  - Antfarm Grasshopper Plugin (Manipulate/Create Antfarm Data in Grasshopper).
+  - Antfarm Urban Data (GIS).
+  - Antfarm Grasshopper (Manipulate/Create Antfarm Data in Grasshopper).
 - Many many more...
 
 Roadmap Currently Includes:
