@@ -28,7 +28,7 @@ Roadmap Currently Includes:
 - UI & UX refinment and feature inhancements.
   - Dataset tab and gridview for querying, grouping and analysis of Antfarm data in simple easy to accomplish ways.
   - Data visualization tools in the AntFarm tabview and within the Rhino Viewport.
-  - Data conversion tools such as converting between datatypes (auto catagorize data as and example).
+  - Data conversion tools such as converting between datatypes (auto catagorize data as an example).
   - Refine the integration to excel and other external data analyis tools to leverage existing tools and knowledge. 
  - Expose built in SQL interpreter.
   - Provide a simple Visual SQL Query Tool in Rhino and Grasshopper.
