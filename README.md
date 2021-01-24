@@ -4,7 +4,7 @@
 
 ## AntFarm
 
-AntFarm is a <a href="https://www.rhino3d.com/" target="rhino">Rhino 3D</a> plugin written in C# using the <a href="https://docs.microsoft.com/en-us/dotnet/framework/" target="microsoft">Mircosofts .net framework (4.7.2)</a>. It permits the user to store any type of data on a rhino object and in an in-memory SQLite database. Any operation is implemented as a Rhino command, but can also be accessed through a UI. It also provides an API and a plugin system.
+AntFarm is a <a href="https://www.rhino3d.com/" target="rhino">Rhino 3D</a>v7 plugin written in C# using the <a href="https://docs.microsoft.com/en-us/dotnet/framework/" target="microsoft">Mircosofts .net framework (4.7.2)</a>. It permits the user to store any type of data on a rhino object and in an in-memory SQLite database. Any operation is implemented as a Rhino command, but can also be accessed through a UI. It also provides an API and a plugin system.
 
 ---
 
