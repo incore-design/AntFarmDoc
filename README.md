@@ -6,11 +6,33 @@
 
 AntFarm is a <a href="https://www.rhino3d.com/" target="_blank">Rhino 3D v7</a> plugin written in C# using the <a href="https://docs.microsoft.com/en-us/dotnet/framework/" target="_blank">Mircosofts .net framework (4.8)</a>. It permits the user to store select data of several types on a rhino object and in an in-memory SQLite database through a series of new Rhino Commands that can also be accessed through a UI prodidging complete integration with the standard Rhino experience inlcuding save/open, import/export, copy/paste between files and full undo/redo integration. Additionally Antfarm provides an API and a plugin system to furthe enhance the core data model with domain specific tools and functions such as Grasshopper and GIS with many more tools in the future planned. 
 
-Currently in <a href="https://en.wikipedia.org/wiki/Software_release_life_cycle#Beta" target="release">Beta</a> the core data model and functions are considered to be feature complete.
+Currently in <a href="https://en.wikipedia.org/wiki/Software_release_life_cycle#Beta" target="release">Beta</a> the core data model and functions are considered to be feature complete, but we are still developing the tools and API with the current focus on Usaiblity inhancements, data manipulation and analysis inhancements and core optimizations. 
 
-Core Data Model Includes:
--Serialize all data to .3dm files
--Copy and Pase objects and associated Data within and between Rhino Files
+CoreData Model Includes:
+
+- Create Datasets & Atrribtues to add to Rhino Geometry Objects .
+- Serialize all data to .3dm files.
+- Copy and Pase Rhino Geometry Objects and associated Antfarm data within and between Rhino Files.
+- Add/Remove Antfarm Data to/from Rhino Geometry Objects.
+- Track Rhino Geomety Attributes such as area, location, volume and length for appropriate geometries.
+- Internal SQL interpreter.
+- Public API for futher Domain Specific tools and Inhancements.
+  - Antfarm Urban Data (GIS) plugin for Antfarm.
+  - Antfarm Grasshopper Plugin (Manipulate/Create Antfarm Data in Grasshopper).
+- Many many more...
+
+Roadmap Currently Includes:
+
+- Core DataModel bug fixes and optimizations.
+  - Optimize data creation and manipulation to ensure that massive datasets do not impact performance and viewport frames.
+- UI & UX refinment and feature inhancements.
+  - Dataset Tab and Gridview for querying, grouping and visualizing Antfarm data in simple easy to read ways.
+  - Data Visualization tools in the AntFarm Tab and within the Rhino Viewport.
+  - Data conversion tools such as converting between datatypes (auto catagorize data as and example).
+ - Expose built in SQL interpreter.
+  - Provide a simple Visual SQL Query Tool in Rhino and Grasshopper.
+  - Provide a SQL runtime text interpretor for data exploration and manipulation for advanced users.
+ - Provide Quality of Life and Additional Features based on user feedback.
 
 ---
 
