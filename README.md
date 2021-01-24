@@ -4,7 +4,7 @@
 
 ## AntFarm
 
-AntFarm is a <a href="https://www.rhino3d.com/" target="rhino">Rhino 3D</a>v7 plugin written in C# using the <a href="https://docs.microsoft.com/en-us/dotnet/framework/" target="microsoft">Mircosofts .net framework (4.8)</a>. It permits the user to store select data of several types on a rhino object and in an in-memory SQLite database through a series of new Rhino Commands that can also be accessed through a UI prodidging complete integration with the standard Rhino experience inlcuding save/open, import/export, copy/paste between files and full undo/redo integration. Additionally Antfarm provides an API and a plugin system to furthe enhance the core data model with domain specific tools and functions such as Grasshopper and GIS with many more tools in the future planned. 
+AntFarm is a <a href="https://www.rhino3d.com/" target="_blank">Rhino 3D</a>v7 plugin written in C# using the <a href="https://docs.microsoft.com/en-us/dotnet/framework/" target="_blank">Mircosofts .net framework (4.8)</a>. It permits the user to store select data of several types on a rhino object and in an in-memory SQLite database through a series of new Rhino Commands that can also be accessed through a UI prodidging complete integration with the standard Rhino experience inlcuding save/open, import/export, copy/paste between files and full undo/redo integration. Additionally Antfarm provides an API and a plugin system to furthe enhance the core data model with domain specific tools and functions such as Grasshopper and GIS with many more tools in the future planned. 
 
 Currently in <a href="https://en.wikipedia.org/wiki/Software_release_life_cycle#Beta" target="release">Beta</a> the core data model and functions are considered to be feature complete. 
 
