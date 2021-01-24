@@ -30,7 +30,6 @@ Roadmap Currently Includes:
   - Data visualization tools in the AntFarm tabview and within the Rhino Viewport.
   - Data conversion tools such as converting between datatypes (auto catagorize data as an example).
   - Refine the integration to excel and other external data analyis tools to leverage existing tools and knowledge. 
- - Expose built in SQL interpreter.
   - Provide a simple Visual SQL Query Tool in Rhino and Grasshopper.
     - Provide advanced data analysis, "Business Intelegence" & "Machine Learning" tools to the Grasshopper plugin.
   - Provide a SQL runtime text interpretor for data exploration and manipulation for advanced users.
