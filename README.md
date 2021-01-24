@@ -9,8 +9,8 @@ AntFarm is a <a href="https://www.rhino3d.com/" target="_blank">Rhino 3D v7</a> 
 Currently in <a href="https://en.wikipedia.org/wiki/Software_release_life_cycle#Beta" target="release">Beta</a> the core data model and functions are considered to be feature complete.
 
 Core Data Model Includes:
-*Serialize all data to .3dm files
-*Copy and Pase objects and associated Data within and between Rhino Files
+-Serialize all data to .3dm files
+-Copy and Pase objects and associated Data within and between Rhino Files
 
 ---
 
