@@ -4,7 +4,9 @@
 
 ## AntFarm
 
-AntFarm is a <a href="https://www.rhino3d.com/" target="rhino">Rhino 3D</a>v7 plugin written in C# using the <a href="https://docs.microsoft.com/en-us/dotnet/framework/" target="microsoft">Mircosofts .net framework (4.7.2)</a>. It permits the user to store any type of data on a rhino object and in an in-memory SQLite database. Any operation is implemented as a Rhino command, but can also be accessed through a UI. It also provides an API and a plugin system.
+AntFarm is a <a href="https://www.rhino3d.com/" target="rhino">Rhino 3D</a>v7 plugin written in C# using the <a href="https://docs.microsoft.com/en-us/dotnet/framework/" target="microsoft">Mircosofts .net framework (4.8)</a>. It permits the user to store select data of several types on a rhino object and in an in-memory SQLite database through a series of new Rhino commands that can also be accessed through a UI. Additionally it provides an API and a plugin system to furthe enhance the core data model with domain specific tools and functions such as GIS and much much more. 
+
+Currently in <a href="https://en.wikipedia.org/wiki/Software_release_life_cycle#Beta" target="release">Beta</a> the core datamodel and functions are considered to be feature complete. 
 
 ---
 
@@ -21,13 +23,12 @@ AntFarm is a <a href="https://www.rhino3d.com/" target="rhino">Rhino 3D</a>v7 pl
 
 ### Installation
 
-Text how to install AntFarm and the plugins.
-
+AntFarm and associated plugins are availabe in the <a href="https://www.rhino3d.com/features/package-manager/" target="packageManager">Package Manager</a>
 ---
 
 ### Data Structure
 
-AntFarm data is held in DataSets and in addition in a record on the Rhino Object. The DataSet can have Attributes.
+AntFarm data is held in SQL tables and keyed to Rhino geometry and objects as grouped themes of data collections called "DataSets". They are represented graphicaly in a familar excel like table view of columns(Attributes) and rows(Geometry Objects).
 
 <table>
   <tr>
@@ -37,7 +38,7 @@ AntFarm data is held in DataSets and in addition in a record on the Rhino Object
   <tr>
     <td valign="top" id="dataset">DataSet</td>
     <td>
-      <p>An AntFarm <a href="#dataset">DataSet</a> is represented as an in-memory data table. AntFarm is developed using an SQLite database. A <a href="#dataset">DataSet</a> can hold additional data specified in the <a href="#attribute">Attribute</a>s. The data not only gets stored in the database but also in the custom user data of the referenced Rhino object. A <a href="#dataset">DataSet</a> must be of unique name and can have the following <a href="#dataset_settings">settings</a>.</p>
+      <p>An AntFarm <a href="#dataset">DataSet</a> is represented as a table view and stored as an in-memory data table. AntFarm is developed using SQLite and as such has a full SQL backend. A <a href="#dataset">DataSet</a> can hold additional data specified in the <a href="#attribute">Attribute</a>s. The data not only gets stored in the database but also keyed to referenced Rhino object where is serialzied and saved in the Rhino file. A <a href="#dataset">DataSet</a> must be of unique name and can have the following <a href="#dataset_settings">settings</a>.</p>
       <table>
         <tr>
           <td valign="top"><b>Name</b></td>
